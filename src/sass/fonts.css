@@ -1,0 +1,157 @@
+@font-face {
+    font-family: '/fonts/Proxima Nova Rg';
+    src: url('/fonts/ProximaNova-Regular.eot');
+    src: url('/fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('/fonts/ProximaNova-Regular.woff') format('woff'),
+        url('/fonts/ProximaNova-Regular.ttf') format('truetype'),
+        url('/fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Exo 2.0';
+    src: url('/fonts/Exo20-Regular.eot');
+    src: url('/fonts/Exo20-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Exo20-Regular.woff2') format('woff2'),
+        url('/fonts/Exo20-Regular.woff') format('woff'),
+        url('/fonts/Exo20-Regular.ttf') format('truetype'),
+        url('/fonts/Exo20-Regular.svg#Exo2.0-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Exo 2.0 Extra';
+    src: url('/fonts/Exo20-ExtraBold.eot');
+    src: url('/fonts/Exo20-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Exo20-ExtraBold.woff2') format('woff2'),
+        url('/fonts/Exo20-ExtraBold.woff') format('woff'),
+        url('/fonts/Exo20-ExtraBold.ttf') format('truetype'),
+        url('/fonts/Exo20-ExtraBold.svg#Exo2.0-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('/fonts/ProximaNova-Bold.eot');
+    src: url('/fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('/fonts/ProximaNova-Bold.woff') format('woff'),
+        url('/fonts/ProximaNova-Bold.ttf') format('truetype'),
+        url('/fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Exo 2.0 Semi';
+    src: url('/fonts/Exo20-SemiBold.eot');
+    src: url('/fonts/Exo20-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Exo20-SemiBold.woff2') format('woff2'),
+        url('/fonts/Exo20-SemiBold.woff') format('woff'),
+        url('/fonts/Exo20-SemiBold.ttf') format('truetype'),
+        url('/fonts/Exo20-SemiBold.svg#Exo2.0-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('/fonts/TTNorms-Bold.eot');
+    src: url('/fonts/TTNorms-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/TTNorms-Bold.woff2') format('woff2'),
+        url('/fonts/TTNorms-Bold.woff') format('woff'),
+        url('/fonts/TTNorms-Bold.ttf') format('truetype'),
+        url('/fonts/TTNorms-Bold.svg#TTNorms-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Exo 2.0';
+    src: url('/fonts/Exo20-Bold.eot');
+    src: url('/fonts/Exo20-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Exo20-Bold.woff2') format('woff2'),
+        url('/fonts/Exo20-Bold.woff') format('woff'),
+        url('/fonts/Exo20-Bold.ttf') format('truetype'),
+        url('/fonts/Exo20-Bold.svg#Exo2.0-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('/fonts/TTNorms-Light.eot');
+    src: url('/fonts/TTNorms-Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/TTNorms-Light.woff2') format('woff2'),
+        url('/fonts/TTNorms-Light.woff') format('woff'),
+        url('/fonts/TTNorms-Light.ttf') format('truetype'),
+        url('/fonts/TTNorms-Light.svg#TTNorms-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('/fonts/TTNorms-Medium.eot');
+    src: url('/fonts/TTNorms-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/TTNorms-Medium.woff2') format('woff2'),
+        url('/fonts/TTNorms-Medium.woff') format('woff'),
+        url('/fonts/TTNorms-Medium.ttf') format('truetype'),
+        url('/fonts/TTNorms-Medium.svg#TTNorms-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('/fonts/TTNorms-Regular.eot');
+    src: url('/fonts/TTNorms-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/TTNorms-Regular.woff2') format('woff2'),
+        url('/fonts/TTNorms-Regular.woff') format('woff'),
+        url('/fonts/TTNorms-Regular.ttf') format('truetype'),
+        url('/fonts/TTNorms-Regular.svg#TTNorms-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Idealist Sans';
+    src: url('/fonts/IdealistSans-Light.eot');
+    src: url('/fonts/IdealistSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/IdealistSans-Light.woff2') format('woff2'),
+        url('/fonts/IdealistSans-Light.woff') format('woff'),
+        url('/fonts/IdealistSans-Light.ttf') format('truetype'),
+        url('/fonts/IdealistSans-Light.svg#IdealistSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Idealist Sans';
+    src: url('/fonts/IdealistSans.eot');
+    src: url('/fonts/IdealistSans.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/IdealistSans.woff2') format('woff2'),
+        url('/fonts/IdealistSans.woff') format('woff'),
+        url('/fonts/IdealistSans.ttf') format('truetype'),
+        url('/fonts/IdealistSans.svg#IdealistSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+

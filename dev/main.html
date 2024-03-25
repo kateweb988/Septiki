@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+	<title>Play-off Hockey</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<meta property="og:locale" content="ru-Ru">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vjik/arcticModal@master/arcticmodal/jquery.arcticmodal.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+	<div class="body-wrap">
+		<header class="header" id="header">
+			<nav class="nav">
+				<div class="container">
+					<div class="menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="menu">
+						<form action="#" class="nav__form">
+							<input type="search" placeholder="Что вы ищите?" name="search">
+							<button>
+								<img src="/img/search.svg" alt="">
+							</button>
+						</form>
+						<a href="#" class="nav__btn btn">
+							Подарки и бонусы
+						</a>
+						<div class="nav__content">
+							<a href="tel:89821000726" class="nav__tel">
+								8 (982) 1000-726
+							</a>
+							<a href="#" class="nav__link">
+								заказать звонок
+							</a>
+						</div>
+						<div class="nav__bottom d-flex">
+							<ul class="nav__list">
+								<li>
+									<a href="#">
+										Игрок
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Вратарь
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Тренер/Судья
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Одежда
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Белье
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Аксессуары
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Флорбол
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Фанат
+									</a>
+								</li>
+							</ul>
+							<a href="#" class="nav__customers d-flex">
+								<p>
+									Покупателям
+								</p>
+								<img src="/img/dots.svg" alt="" class="svg">
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="header__wrap">
+				<div class="header__box">
+					<!-- Swiper -->
+					<div class="swiper1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="header__flex">
+									<img src="/img/bg2.png" alt="" class="header__bg">
+									<div class="header__content">
+										<h1>
+											Абсолютная мощь
+										</h1>
+										<p class="header__text">
+											Хоккейная экипировка и атрибутика <br>
+											с доставкой по всей России
+										</p>
+										<a href="#" class="header__btn btn">
+											Купить <img src="/img/arr-right.svg" alt="" class="svg">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="header__flex">
+									<img src="/img/bg1.png" alt="" class="header__bg">
+									<div class="header__content">
+										<h1>
+											ПОдарки <br>
+											и бонусы
+										</h1>
+										<p class="header__text">
+											Хитовая распродажа года! <br>
+											Дарим подарки и бонусы всем клиентам.
+										</p>
+										<a href="#" class="header__btn btn">
+											В каталог <img src="/img/arr-right.svg" alt="" class="svg">
+										</a>
+									</div>
+									<img src="/img/mans.png" alt="" class="header__pic">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="header__flex">
+									<img src="/img/bg3.png" alt="" class="header__bg">
+									<div class="header__content">
+										<h1>
+											Хоккейная атрибутика <br>
+											для фанатов
+										</h1>
+										<a href="#" class="header__btn btn">
+											В каталог <img src="/img/arr-right.svg" alt="" class="svg">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination2"></div>
+					</div>
+				</div>
+				<div class="swiper-button-next  header-arr">
+					<img src="/img/right.png" alt="">
+				</div>
+				<div class="swiper-button-prev header-arr">
+					<img src="/img/right.png" alt="">
+				</div>
+			</div>
+		</header>
+		<section class="pop" id="pop">
+			<div class="container">
+				<div class="tabs">
+					<div class="tabs__nav d-flex">
+						<a href="#" class="tabs__btn tabs__btn_active active">
+							Все новинки
+						</a>
+						<a href="#" class="tabs__btn">
+							Для игрока
+						</a>
+						<a href="#" class="tabs__btn">
+							Для вратаря
+						</a>
+						<a href="#" class="tabs__btn">
+							Одежда
+						</a>
+						<a href="#" class="tabs__btn">
+							Белье
+						</a>
+						<a href="#" class="tabs__btn">
+							Аксессуары
+						</a>
+					</div>
+					<div class="tabs__content">
+						<div class="tabs__pane tabs__pane_show">
+							<div class="pop__box d-flex">
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item1.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Коньки хоккейные BAUER SUPREME
+										MACH TI SR S22
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										86 990 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item2.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Шлем хоккейный CCM TACKS
+										210 SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										10 790 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item3.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Нагрудник хоккейный CCM TACKS
+										AS-V PRO SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										21 590 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item4.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Налокотники хоккейные CCM
+										JETSPEED FT4 JR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										8 690 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item5.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Сумка хоккейная WARRIOR Q20
+										CARGO ROLLER LG 37"
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										13 990 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item6.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Клюшка хоккейная BAUER VAPOR
+										HYPERLITE GRIP SR S21
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										26 690 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item7.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Перчатки хоккейные CCM JETSPEED
+										FT4 PRO SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										21 590 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item8.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Щитки хоккейные CCM TACKS
+										AS-V SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										15 590 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__pane">
+							<div class="pop__box d-flex">
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item2.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Шлем хоккейный CCM TACKS
+										210 SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										10 790 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item3.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Нагрудник хоккейный CCM TACKS
+										AS-V PRO SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										21 590 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item4.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Налокотники хоккейные CCM
+										JETSPEED FT4 JR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										8 690 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item5.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Сумка хоккейная WARRIOR Q20
+										CARGO ROLLER LG 37"
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										13 990 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item6.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Клюшка хоккейная BAUER VAPOR
+										HYPERLITE GRIP SR S21
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										26 690 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item7.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Перчатки хоккейные CCM JETSPEED
+										FT4 PRO SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										21 590 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item8.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Щитки хоккейные CCM TACKS
+										AS-V SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										15 590 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__pane">
+							<div class="pop__box d-flex">
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item3.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Нагрудник хоккейный CCM TACKS
+										AS-V PRO SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										21 590 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item4.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Налокотники хоккейные CCM
+										JETSPEED FT4 JR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										8 690 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item5.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Сумка хоккейная WARRIOR Q20
+										CARGO ROLLER LG 37"
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										13 990 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item6.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Клюшка хоккейная BAUER VAPOR
+										HYPERLITE GRIP SR S21
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										26 690 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item7.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Перчатки хоккейные CCM JETSPEED
+										FT4 PRO SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										21 590 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item8.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Щитки хоккейные CCM TACKS
+										AS-V SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										15 590 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__pane">
+							<div class="pop__box d-flex">
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item1.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Коньки хоккейные BAUER SUPREME
+										MACH TI SR S22
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										86 990 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item2.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Шлем хоккейный CCM TACKS
+										210 SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										10 790 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item3.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Нагрудник хоккейный CCM TACKS
+										AS-V PRO SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										21 590 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item4.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Налокотники хоккейные CCM
+										JETSPEED FT4 JR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										8 690 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item5.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Сумка хоккейная WARRIOR Q20
+										CARGO ROLLER LG 37"
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										13 990 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item6.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Клюшка хоккейная BAUER VAPOR
+										HYPERLITE GRIP SR S21
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										26 690 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item7.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Перчатки хоккейные CCM JETSPEED
+										FT4 PRO SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										21 590 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item8.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Щитки хоккейные CCM TACKS
+										AS-V SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										15 590 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__pane">
+							<div class="pop__box d-flex">
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item1.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Коньки хоккейные BAUER SUPREME
+										MACH TI SR S22
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										86 990 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item2.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Шлем хоккейный CCM TACKS
+										210 SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										10 790 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item3.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Нагрудник хоккейный CCM TACKS
+										AS-V PRO SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										21 590 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item4.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Налокотники хоккейные CCM
+										JETSPEED FT4 JR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										8 690 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item5.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Сумка хоккейная WARRIOR Q20
+										CARGO ROLLER LG 37"
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										13 990 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item6.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Клюшка хоккейная BAUER VAPOR
+										HYPERLITE GRIP SR S21
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										26 690 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item7.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Перчатки хоккейные CCM JETSPEED
+										FT4 PRO SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										21 590 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item8.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Щитки хоккейные CCM TACKS
+										AS-V SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										15 590 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__pane">
+							<div class="pop__box d-flex">
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item1.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Коньки хоккейные BAUER SUPREME
+										MACH TI SR S22
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										86 990 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item2.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Шлем хоккейный CCM TACKS
+										210 SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										10 790 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item3.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Нагрудник хоккейный CCM TACKS
+										AS-V PRO SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										21 590 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item4.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Налокотники хоккейные CCM
+										JETSPEED FT4 JR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										8 690 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item5.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Сумка хоккейная WARRIOR Q20
+										CARGO ROLLER LG 37"
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										13 990 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item6.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Клюшка хоккейная BAUER VAPOR
+										HYPERLITE GRIP SR S21
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										26 690 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item7.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Перчатки хоккейные CCM JETSPEED
+										FT4 PRO SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										21 590 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pop__item">
+									<div class="pop__block">
+										<img src="/img/item8.png" alt="" class="pop__pic">
+									</div>
+									<p class="pop__name">
+										Щитки хоккейные CCM TACKS
+										AS-V SR
+									</p>
+									<div class="pop__info">
+										<img src="/img/check.png" alt="">
+										Есть в наличии
+									</div>
+									<p class="pop__sum">
+										15 590 ₽
+									</p>
+									<div class="pop__links">
+										<a href="#" class="pop__el">
+											<img src="/img/love.png" alt="">
+										</a>
+										<a href="#" class="pop__el">
+											<img src="/img/basket.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="rev" id="rev">
+			<div class="container">
+				<div class="swiper_news">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="img/news/photo1.jpg" data-fancybox="gallery">
+								<img src="img/news/photo1.jpg" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="img/news/photo2.png" data-fancybox="gallery">
+								<img src="img/news/photo2.png" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="img/news/photo3.png" data-fancybox="gallery">
+								<img src="img/news/photo3.png" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="img/news/photo4.png" data-fancybox="gallery">
+								<img src="img/news/photo4.png" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="img/news/photo5.jpg" data-fancybox="gallery">
+								<img src="img/news/photo5.jpg" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="img/news/photo6.jpg" data-fancybox="gallery">
+								<img src="img/news/photo6.jpg" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="img/news/photo7.png" data-fancybox="gallery">
+								<img src="img/news/photo7.png" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="img/news/photo8.png" data-fancybox="gallery">
+								<img src="img/news/photo8.png" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="img/news/photo1.jpg" data-fancybox="gallery">
+								<img src="img/news/photo1.jpg" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="img/news/photo4.png" data-fancybox="gallery">
+								<img src="img/news/photo4.png" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="img/news/photo1.jpg" data-fancybox="gallery">
+								<img src="img/news/photo1.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="popup__bg2" id="popup2">
+			<div class="popup2">
+				<img src="/img/close.png" alt="" class="close-popup2">
+				<div class="popup__wrap">
+					<p class="popup__title">
+						Обратный звонок
+					</p>
+					<form action="success.php" class="order__form js-form" id="popupResult" method="post">
+						<input type="text" name="name" required="" placeholder="Ваше имя" class="order__input form__field">
+						<input type="tel" name="tel" required="" placeholder="Ваш номер телефона"
+							class="order__input tel form__field">
+						<button class="order__btn btn" data-submit>
+							Перезвоните мне
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div style="display:none;">
+			<div class="box-modal" id="popup-call">
+				<div class="popup-call__box popup3">
+					<div class="box-modal__close articmodal-close">
+						<img src="/img/close5.png" alt="" class="svg">
+					</div>
+					<div class="popup__wrap">
+						<img src="/img/g.png" alt="" class="g">
+						<form action="success.php" class="popup__form js-form" id="popupResult" method="post">
+							<input type="text" placeholder="Имя" class="form__field" required="">
+							<input type="tel" placeholder="Телефон" class="tel form__field" required="">
+							<p class="txt">
+								Удобный вид связи
+							</p>
+							<div class="nav__socials q">
+								<div class="calc__item">
+									<input class="form-check-input custom-checkbox" type="radio" name="formKitchen" id="form1"
+										value="WhatsApp ">
+									<label class="form-check-label " for="form1">
+										<img src="img/p4.png" alt=""> WhatsApp
+									</label>
+								</div>
+								<div class="calc__item">
+									<input class="form-check-input custom-checkbox" type="radio" name="formKitchen" id="form206"
+										value="Telegram">
+									<label class="form-check-label " for="form206">
+										<img src="img/a4.png" alt=""> Telegram
+									</label>
+								</div>
+							</div>
+							<button class="btn btn_2 popup__btn" data-submit>
+								ЗАКАЗАТЬ ЗВОНОК
+							</button>
+							<p class="popup__text">
+								Отправляя заявку, Вы соглашаетесь с <a href="#" target="blank"> политикой <br>
+									конфиденциальности</a>
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="display:none;">
+			<div class="box-modal" id="popup-thank">
+				<div class="popup-call__box popup3">
+					<div class="box-modal__close articmodal-close">
+						<img src="/img/close5.png" alt="" class="svg">
+					</div>
+					<div class="popup__wrap">
+						<p class="popup__title">
+							Спасибо Вам, <br> что выбрали нас
+						</p>
+						<p class="sub">
+							Наш менеджер свяжется с Вами <br> в течении 15 минут
+						</p>
+						<img src="/img/face.png" alt="" class="smile">
+						<p class="txt">
+							Для быстрой связи напишите <br> пожалуйста в телеграмм
+						</p>
+						<div class="nav__socials q">
+							<a href="#" class="nav__link" target="blank">
+								<img src="img/a4.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			ymaps.ready(init);
+
+			function init() {
+				var myMap = new ymaps.Map("map", {
+					// Центр карты, указываем коордианты
+					center: [59.845537, 30.322902],
+					// Масштаб, тут все просто
+					zoom: 11,
+					// Отключаем все элементы управления
+					controls: []
+				});
+
+				var myGeoObjects = [];
+
+				// Наша метка, указываем коордианты
+				myGeoObjects = new ymaps.Placemark([59.845537, 30.322902], {
+					balloonContentBody: 'ЧистоGUN',
+				}, {
+					iconLayout: 'default#image',
+					// Путь до нашей картинки
+					iconImageHref: 'img/map.svg',
+					// Размер по ширине и высоте
+					iconImageSize: [50, 70],
+					// Смещение левого верхнего угла иконки относительно
+					// её «ножки» (точки привязки).
+					iconImageOffset: [-35, -35]
+				});
+
+				var clusterer = new ymaps.Clusterer({
+					clusterDisableClickZoom: false,
+					clusterOpenBalloonOnClick: false,
+				});
+
+				clusterer.add(myGeoObjects);
+				myMap.geoObjects.add(clusterer);
+				// Отлючаем возможность изменения масштаба
+				myMap.behaviors.disable('scrollZoom');
+
+			}
+		</script>
+		<script type="text/javascript">
+			ymaps.ready(init);
+
+			function init() {
+				var myMap = new ymaps.Map("map", {
+					center: [55.773105, 37.736779],
+					zoom: 9,
+					controls: []
+				});
+
+				var myGeoObjects = [];
+
+				// Метка 1
+				myGeoObjects[0] = new ymaps.Placemark([55.773105, 37.736779], {
+					balloonContentBody: '<b>Москва, ул. Название улицы 10, офис 11 <br></b>' +
+						'<p class="txt">пн - пт с 09:00 до 20:00   |   сб - вс выходные <br></p>' +
+						'<img class="ic" src="/img/bb2.png" alt="">  <a class="link" href="mailto:info@maschina.ru">info@maschina.ru</a><br>' +
+						'<a class="link2" href="tel:+74951234567">+7 (495) 123-45-67</a>' +
+						'<a class="link3" href="#">заказать звонок</a>'
+
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: '/img/map.png',
+					iconImageSize: [30, 36],
+					iconImageOffset: [-35, -35]
+				});
+
+				// Метка 2
+				myGeoObjects[1] = new ymaps.Placemark([55.799947, 37.799068], {
+					balloonContentBody: '<b>Москва, ул. Название улицы 10, офис 15 <br></b>' +
+						'<p class="txt">пн - пт с 09:00 до 20:00   |   сб - вс выходные <br></p>' +
+						'<img class="ic" src="/img/bb2.png" alt="">  <a class="link" href="mailto:info@maschina.ru">info@maschina.ru</a><br>' +
+						'<a class="link2" href="tel:+74951234567">+7 (495) 123-45-67</a>' +
+						'<a class="link3" href="#">заказать звонок</a>'
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: '/img/map.png',
+					iconImageSize: [30, 36],
+					iconImageOffset: [-35, -35]
+				});
+				// Метка 3
+				myGeoObjects[2] = new ymaps.Placemark([55.657484, 37.731335], {
+					balloonContentBody: '<b>Москва, ул. Название улицы 10, офис 1 <br></b>' +
+						'<p class="txt">пн - пт с 09:00 до 20:00   |   сб - вс выходные <br></p>' +
+						'<img class="ic" src="/img/bb2.png" alt="">  <a class="link" href="mailto:info@maschina.ru">info@maschina.ru</a><br>' +
+						'<a class="link2" href="tel:+74951234567">+7 (495) 123-45-67</a>' +
+						'<a class="link3" href="#">заказать звонок</a>'
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: '/img/map.png',
+					iconImageSize: [30, 36],
+					iconImageOffset: [-35, -35]
+				});
+				var clusterer = new ymaps.Clusterer({
+					clusterDisableClickZoom: false,
+					clusterOpenBalloonOnClick: false,
+				});
+
+				clusterer.add(myGeoObjects);
+				myMap.geoObjects.add(clusterer);
+				myMap.behaviors.disable('scrollZoom');
+
+			}
+		</script>
+		<style>
+			b {
+				color: #4a4a4a;
+				font-size: 13px;
+				font-weight: 400;
+				margin-bottom: 10px;
+				display: block;
+				position: relative;
+				margin-left: 20px;
+			}
+
+			b::before {
+				content: "";
+				display: block;
+				background: url(/img/new-arr.png) no-repeat center center;
+				position: absolute;
+				top: 0;
+				left: -15px;
+				width: 10px;
+				height: 10px;
+			}
+
+			.txt {
+				color: #9f9f9f;
+				font-size: 12px;
+				margin-left: 20px;
+			}
+
+			.link {
+				color: #9f9f9f;
+				font-size: 13px;
+				margin-left: 11px;
+			}
+
+			.ic {
+				position: relative;
+				top: 9px;
+				margin-top: 12px;
+				margin-left: 20px;
+			}
+
+			.link2 {
+				color: #262728;
+				font-size: 17px;
+				font-weight: 500;
+				margin-top: 28px;
+				display: block;
+				margin-left: 20px;
+			}
+
+			.link3 {
+				color: #fa442d;
+				font-size: 13px;
+				display: block;
+				margin: 5px;
+				font-weight: 500;
+				text-decoration: underline;
+				margin-left: 20px;
+			}
+		</style>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+		<script src="js/all.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/vjik/arcticModal@master/arcticmodal/jquery.arcticmodal.js"></script>
+		<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+		<script type="text/javascript"
+			src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+</body>
+
+</html>
