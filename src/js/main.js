@@ -1,192 +1,23 @@
 
-document.addEventListener("DOMContentLoaded", () => {
-  class ItcTabs {
-    constructor(target, config) {
-      const defaultConfig = {};
-      this._config = Object.assign(defaultConfig, config);
-      this._elTabs = typeof target === 'string' ? document.querySelector(target) : target;
-      this._elButtons = this._elTabs.querySelectorAll('.tabs__btn');
-      this._elPanes = this._elTabs.querySelectorAll('.tabs__pane');
-      this._eventShow = new Event('tab.itc.change');
-      this._init();
-      this._events();
-    }
-    _init() {
-      this._elTabs.setAttribute('role', 'tablist');
-      this._elButtons.forEach((el, index) => {
-        el.dataset.index = index;
-        el.setAttribute('role', 'tab');
-        this._elPanes[index].setAttribute('role', 'tabpanel');
-      });
-    }
-    show(elLinkTarget) {
-      const elPaneTarget = this._elPanes[elLinkTarget.dataset.index];
-      const elLinkActive = this._elTabs.querySelector('.tabs__btn_active');
-      const elPaneShow = this._elTabs.querySelector('.tabs__pane_show');
-      if (elLinkTarget === elLinkActive) {
-        return;
-      }
-      elLinkActive ? elLinkActive.classList.remove('tabs__btn_active') : null;
-      elPaneShow ? elPaneShow.classList.remove('tabs__pane_show') : null;
-      elLinkTarget.classList.add('tabs__btn_active');
-      elPaneTarget.classList.add('tabs__pane_show');
-      this._elTabs.dispatchEvent(this._eventShow);
-      elLinkTarget.focus();
-    }
-    showByIndex(index) {
-      const elLinkTarget = this._elButtons[index];
-      elLinkTarget ? this.show(elLinkTarget) : null;
-    };
-    _events() {
-      this._elTabs.addEventListener('click', (e) => {
-        const target = e.target.closest('.tabs__btn');
-        if (target) {
-          e.preventDefault();
-          this.show(target);
-        }
-      });
-    }
-  }
-
-  // инициализация .tabs как табов
-  new ItcTabs('.tabs');
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  class ItcTabs {
-    constructor(target, config) {
-      const defaultConfig = {};
-      this._config = Object.assign(defaultConfig, config);
-      this._elTabs = typeof target === 'string' ? document.querySelector(target) : target;
-      this._elButtons = this._elTabs.querySelectorAll('.tabs__btn');
-      this._elPanes = this._elTabs.querySelectorAll('.tabs__pane');
-      this._eventShow = new Event('tab.itc.change');
-      this._init();
-      this._events();
-    }
-    _init() {
-      this._elTabs.setAttribute('role', 'tablist');
-      this._elButtons.forEach((el, index) => {
-        el.dataset.index = index;
-        el.setAttribute('role', 'tab');
-        this._elPanes[index].setAttribute('role', 'tabpanel');
-      });
-    }
-    show(elLinkTarget) {
-      const elPaneTarget = this._elPanes[elLinkTarget.dataset.index];
-      const elLinkActive = this._elTabs.querySelector('.tabs__btn_active');
-      const elPaneShow = this._elTabs.querySelector('.tabs__pane_show');
-      if (elLinkTarget === elLinkActive) {
-        return;
-      }
-      elLinkActive ? elLinkActive.classList.remove('tabs__btn_active') : null;
-      elPaneShow ? elPaneShow.classList.remove('tabs__pane_show') : null;
-      elLinkTarget.classList.add('tabs__btn_active');
-      elPaneTarget.classList.add('tabs__pane_show');
-      this._elTabs.dispatchEvent(this._eventShow);
-      elLinkTarget.focus();
-    }
-    showByIndex(index) {
-      const elLinkTarget = this._elButtons[index];
-      elLinkTarget ? this.show(elLinkTarget) : null;
-    };
-    _events() {
-      this._elTabs.addEventListener('click', (e) => {
-        const target = e.target.closest('.tabs__btn');
-        if (target) {
-          e.preventDefault();
-          this.show(target);
-        }
-      });
-    }
-  }
-
-  // инициализация .tabs как табов
-  new ItcTabs('.tabs2');
-});
-document.addEventListener("DOMContentLoaded", () => {
-  class ItcTabs {
-    constructor(target, config) {
-      const defaultConfig = {};
-      this._config = Object.assign(defaultConfig, config);
-      this._elTabs = typeof target === 'string' ? document.querySelector(target) : target;
-      this._elButtons = this._elTabs.querySelectorAll('.tabs__btn');
-      this._elPanes = this._elTabs.querySelectorAll('.tabs__pane');
-      this._eventShow = new Event('tab.itc.change');
-      this._init();
-      this._events();
-    }
-    _init() {
-      this._elTabs.setAttribute('role', 'tablist');
-      this._elButtons.forEach((el, index) => {
-        el.dataset.index = index;
-        el.setAttribute('role', 'tab');
-        this._elPanes[index].setAttribute('role', 'tabpanel');
-      });
-    }
-    show(elLinkTarget) {
-      const elPaneTarget = this._elPanes[elLinkTarget.dataset.index];
-      const elLinkActive = this._elTabs.querySelector('.tabs__btn_active');
-      const elPaneShow = this._elTabs.querySelector('.tabs__pane_show');
-      if (elLinkTarget === elLinkActive) {
-        return;
-      }
-      elLinkActive ? elLinkActive.classList.remove('tabs__btn_active') : null;
-      elPaneShow ? elPaneShow.classList.remove('tabs__pane_show') : null;
-      elLinkTarget.classList.add('tabs__btn_active');
-      elPaneTarget.classList.add('tabs__pane_show');
-      this._elTabs.dispatchEvent(this._eventShow);
-      elLinkTarget.focus();
-    }
-    showByIndex(index) {
-      const elLinkTarget = this._elButtons[index];
-      elLinkTarget ? this.show(elLinkTarget) : null;
-    };
-    _events() {
-      this._elTabs.addEventListener('click', (e) => {
-        const target = e.target.closest('.tabs__btn');
-        if (target) {
-          e.preventDefault();
-          this.show(target);
-        }
-      });
-    }
-  }
-
-  // инициализация .tabs как табов
-  new ItcTabs('.tabs3');
-});
 document.addEventListener('DOMContentLoaded', function () {
-  $(window).on('load', function () {
-    $(".calc__btn_one").prop('disabled', !$("input[name='formKitchen']:checked").length);
-    $("input[name='formKitchen']").on('change', function () {
-      $(".calc__btn_one").prop('disabled', !$("input[name='formKitchen']:checked").length);
-    });
-    // $(".calc__btn_two").prop('disabled', !$("input[name='typeFacade']:checked").length);
-    // $("input[name='typeFacade']").on('change', function () {
-    //   $(".calc__btn_two").prop('disabled', !$("input[name='typeFacade']:checked").length);
-    // });
-    // $(".calc__btn_three").prop('disabled', !$("input[name='model']:checked").length);
-    // $("input[name='model']").on('change', function () {
-    //   $(".calc__btn_three").prop('disabled', !$("input[name='model']:checked").length);
-    // });
-    $(".calc__btn_four").prop('disabled', !$("input[name='typePanel']:checked").length);
-    $("input[name='typePanel']").on('change', function () {
-      $(".calc__btn_four").prop('disabled', !$("input[name='typePanel']:checked").length);
-    });
-    $(".calc__btn_five").prop('disabled', !$("input[name='typeWash']:checked").length);
-    $("input[name='typeWash']").on('change', function () {
-      $(".calc__btn_five").prop('disabled', !$("input[name='typeWash']:checked").length);
-    });
-    $(".calc__btn_six").prop('disabled', !$("input[name='classFurniture']:checked").length);
-    $("input[name='classFurniture']").on('change', function () {
-      $(".calc__btn_six").prop('disabled', !$("input[name='classFurniture']:checked").length);
-    });
-    $(".calc__btn_seven").prop('disabled', !$("input[name='classF']:checked").length);
-    $("input[name='classF']").on('change', function () {
-      $(".calc__btn_seven").prop('disabled', !$("input[name='classF']:checked").length);
-    });
-  });
+  // $(window).on('load', function () {
+  //   $(".calc__btn_one").prop('disabled', !$("input[name='forms']:checked").length);
+  //   $("input[name='forms']").on('change', function () {
+  //     $(".calc__btn_one").prop('disabled', !$("input[name='forms']:checked").length);
+  //   });
+  //   $(".calc__btn_two").prop('disabled', !$("input[name='forms']:checked").length);
+  //   $("input[name='forms']").on('change', function () {
+  //     $(".calc__btn_two").prop('disabled', !$("input[name='forms']:checked").length);
+  //   });
+  //   $(".calc__btn_three").prop('disabled', !$("input[name='forms']:checked").length);
+  //   $("input[name='forms']").on('change', function () {
+  //     $(".calc__btn_three").prop('disabled', !$("input[name='forms']:checked").length);
+  //   });
+  //   $(".calc__btn_four").prop('disabled', !$("input[name='forms']:checked").length);
+  //   $("input[name='forms']").on('change', function () {
+  //     $(".calc__btn_four").prop('disabled', !$("input[name='forms']:checked").length);
+  //   });
+  // });
   $('.calc__btn_one').click(function (event) {
     $('.calc__one').css('display', 'none');
     $('.calc__two').fadeIn();
@@ -205,21 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
   $('.calc__btn_four').click(function (event) {
     $('.calc__four').css('display', 'none');
     $('.calc__five').fadeIn();
-    return false;
-  });
-  $('.calc__btn_five').click(function (event) {
-    $('.calc__five').css('display', 'none');
-    $('.calc__six').fadeIn();
-    return false;
-  });
-  $('.calc__btn_six').click(function (event) {
-    $('.calc__six').css('display', 'none');
-    $('.calc__seven').fadeIn();
-    return false;
-  });
-  $('.calc__btn_seven').click(function (event) {
-    $('.calc__seven').css('display', 'none');
-    $('.calc__eight').fadeIn();
     return false;
   });
 
@@ -247,17 +63,6 @@ document.addEventListener('DOMContentLoaded', function () {
     return false;
   });
 
-  $('.calc__six .calc__prev').click(function (event) {
-    $('.calc__six').css('display', 'none');
-    $('.calc__five').fadeIn();
-    return false;
-  });
-
-  $('.calc__seven .calc__prev').click(function (event) {
-    $('.calc__seven').css('display', 'none');
-    $('.calc__six').fadeIn();
-    return false;
-  });
 });
 document.addEventListener("DOMContentLoaded", () => {
   // Scroll
@@ -385,21 +190,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 document.addEventListener('DOMContentLoaded', function () {
-  const swiper = new Swiper('.swiper1', {
-    slidesPerView: 1,
-    pagination: {
-      el: ".swiper-pagination2",
-    },
+  const swiper1 = new Swiper('.swiper1', {
+    slidesPerView: 5,
+    spaceBetween: 30,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-  const swiper2 = new Swiper('.swiper2', {
-    slidesPerView: 3,
-    spaceBetween: 43,
-    pagination: {
-      el: ".swiper-pagination3",
+      nextEl: '.swiper-button-next1',
+      prevEl: '.swiper-button-prev1',
     },
     breakpoints: {
       // when window width is >= 320px
@@ -417,8 +213,36 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 3
       },
       1200: {
-        spaceBetween: 43,
+        spaceBetween: 30,
+        slidesPerView: 5
+      }
+    }
+  });
+  const swiper2 = new Swiper('.swiper2', {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.swiper-button-next2',
+      prevEl: '.swiper-button-prev2',
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        spaceBetween: 0,
+        loop: true,
+        slidesPerView: 1
+      },
+      767: {
+        spaceBetween: 10,
+        slidesPerView: 2
+      },
+      992: {
+        spaceBetween: 20,
         slidesPerView: 3
+      },
+      1200: {
+        spaceBetween: 20,
+        slidesPerView: 4
       }
     }
   });
@@ -486,6 +310,234 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll('.tab-btn');
+  const subTabs = document.querySelectorAll('.sub-tab-btn');
+  const tabContents = document.querySelectorAll('.tab-content');
+  const subTabContents = document.querySelectorAll('.sale__box .sub-tab-content');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const tabData = tab.getAttribute('data-tab');
+      tabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.getAttribute('id') === tabData) {
+          content.classList.add('active');
+        }
+      });
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+      });
+      tab.classList.add('active');
+    });
+  });
+
+  subTabs.forEach(subTab => {
+    subTab.addEventListener('click', () => {
+      const subTabData = subTab.getAttribute('data-tab');
+      subTabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.getAttribute('id') === subTabData) {
+          content.classList.add('active');
+        }
+      });
+      subTabs.forEach(subTab => {
+        subTab.classList.remove('active');
+      });
+      subTab.classList.add('active');
+    });
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll('.tab-btn');
+  const subTabs = document.querySelectorAll('.sub-tab-btn2');
+  const tabContents = document.querySelectorAll('.tab-content');
+  const subTabContents = document.querySelectorAll('.sub-tab-content2');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const tabData = tab.getAttribute('data-tab');
+      tabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.getAttribute('id') === tabData) {
+          content.classList.add('active');
+        }
+      });
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+      });
+      tab.classList.add('active');
+    });
+  });
+
+  subTabs.forEach(subTab => {
+    subTab.addEventListener('click', () => {
+      const subTabData = subTab.getAttribute('data-tab');
+      subTabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.getAttribute('id') === subTabData) {
+          content.classList.add('active');
+        }
+      });
+      subTabs.forEach(subTab => {
+        subTab.classList.remove('active');
+      });
+      subTab.classList.add('active');
+    });
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll('.tab-btn');
+  const subTabs = document.querySelectorAll('.sub-tab-btn3');
+  const tabContents = document.querySelectorAll('.tab-content');
+  const subTabContents = document.querySelectorAll('.sub-tab-content3');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const tabData = tab.getAttribute('data-tab');
+      tabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.getAttribute('id') === tabData) {
+          content.classList.add('active');
+        }
+      });
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+      });
+      tab.classList.add('active');
+    });
+  });
+
+  subTabs.forEach(subTab => {
+    subTab.addEventListener('click', () => {
+      const subTabData = subTab.getAttribute('data-tab');
+      subTabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.getAttribute('id') === subTabData) {
+          content.classList.add('active');
+        }
+      });
+      subTabs.forEach(subTab => {
+        subTab.classList.remove('active');
+      });
+      subTab.classList.add('active');
+    });
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll('.tab-btn');
+  const subTabs = document.querySelectorAll('.sub-tab-btn4');
+  const tabContents = document.querySelectorAll('.tab-content');
+  const subTabContents = document.querySelectorAll('.sub-tab-content4');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const tabData = tab.getAttribute('data-tab');
+      tabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.getAttribute('id') === tabData) {
+          content.classList.add('active');
+        }
+      });
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+      });
+      tab.classList.add('active');
+    });
+  });
+
+  subTabs.forEach(subTab => {
+    subTab.addEventListener('click', () => {
+      const subTabData = subTab.getAttribute('data-tab');
+      subTabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.getAttribute('id') === subTabData) {
+          content.classList.add('active');
+        }
+      });
+      subTabs.forEach(subTab => {
+        subTab.classList.remove('active');
+      });
+      subTab.classList.add('active');
+    });
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll('.tab-btn');
+  const subTabs = document.querySelectorAll('.sub-tab-btn5');
+  const tabContents = document.querySelectorAll('.tab-content');
+  const subTabContents = document.querySelectorAll('.sub-tab-content5');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const tabData = tab.getAttribute('data-tab');
+      tabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.getAttribute('id') === tabData) {
+          content.classList.add('active');
+        }
+      });
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+      });
+      tab.classList.add('active');
+    });
+  });
+
+  subTabs.forEach(subTab => {
+    subTab.addEventListener('click', () => {
+      const subTabData = subTab.getAttribute('data-tab');
+      subTabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.getAttribute('id') === subTabData) {
+          content.classList.add('active');
+        }
+      });
+      subTabs.forEach(subTab => {
+        subTab.classList.remove('active');
+      });
+      subTab.classList.add('active');
+    });
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll('.tab-btn');
+  const subTabs = document.querySelectorAll('.sub-tab-btn6');
+  const tabContents = document.querySelectorAll('.tab-content');
+  const subTabContents = document.querySelectorAll('.sub-tab-content6');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const tabData = tab.getAttribute('data-tab');
+      tabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.getAttribute('id') === tabData) {
+          content.classList.add('active');
+        }
+      });
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+      });
+      tab.classList.add('active');
+    });
+  });
+
+  subTabs.forEach(subTab => {
+    subTab.addEventListener('click', () => {
+      const subTabData = subTab.getAttribute('data-tab');
+      subTabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.getAttribute('id') === subTabData) {
+          content.classList.add('active');
+        }
+      });
+      subTabs.forEach(subTab => {
+        subTab.classList.remove('active');
+      });
+      subTab.classList.add('active');
+    });
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
   let menuBtn = document.querySelector('.menu-btn');
   let menu = document.querySelector('.menu');
   menuBtn.addEventListener('click', function () {
@@ -529,3 +581,369 @@ $(function () {
 
   });
 });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   class ItcTabs {
+//     constructor(target, config) {
+//       const defaultConfig = {};
+//       this._config = Object.assign(defaultConfig, config);
+//       this._elTabs = typeof target === 'string' ? document.querySelector(target) : target;
+//       this._elButtons = this._elTabs.querySelectorAll('.swiper1 .tabs__btn');
+//       this._elPanes = this._elTabs.querySelectorAll('.tabs__pane');
+//       this._eventShow = new Event('tab.itc.change');
+//       this._init();
+//       this._events();
+//     }
+//     _init() {
+//       this._elTabs.setAttribute('role', 'tablist');
+//       this._elButtons.forEach((el, index) => {
+//         el.dataset.index = index;
+//         el.setAttribute('role', 'tab');
+//         this._elPanes[index].setAttribute('role', 'tabpanel');
+//       });
+//     }
+//     show(elLinkTarget) {
+//       const elPaneTarget = this._elPanes[elLinkTarget.dataset.index];
+//       const elLinkActive = this._elTabs.querySelector('.swiper1 .tabs__btn_active');
+//       const elPaneShow = this._elTabs.querySelector('.tabs__pane_show');
+//       if (elLinkTarget === elLinkActive) {
+//         return;
+//       }
+//       elLinkActive ? elLinkActive.classList.remove('tabs__btn_active') : null;
+//       elPaneShow ? elPaneShow.classList.remove('tabs__pane_show') : null;
+//       elLinkTarget.classList.add('tabs__btn_active');
+//       elPaneTarget.classList.add('tabs__pane_show');
+//       this._elTabs.dispatchEvent(this._eventShow);
+//       elLinkTarget.focus();
+//     }
+//     showByIndex(index) {
+//       const elLinkTarget = this._elButtons[index];
+//       elLinkTarget ? this.show(elLinkTarget) : null;
+//     };
+//     _events() {
+//       this._elTabs.addEventListener('click', (e) => {
+//         const target = e.target.closest('.tabs__btn');
+//         if (target) {
+//           e.preventDefault();
+//           this.show(target);
+//         }
+//       });
+//     }
+//   }
+
+//   // инициализация .tabs как табов
+//   new ItcTabs('.tabs');
+// });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   class ItcTabs {
+//     constructor(target, config) {
+//       const defaultConfig = {};
+//       this._config = Object.assign(defaultConfig, config);
+//       this._elTabs = typeof target === 'string' ? document.querySelector(target) : target;
+//       this._elButtons = this._elTabs.querySelectorAll('.tabs__btn');
+//       this._elPanes = this._elTabs.querySelectorAll('.tabs__pane');
+//       this._eventShow = new Event('tab.itc.change');
+//       this._init();
+//       this._events();
+//     }
+//     _init() {
+//       this._elTabs.setAttribute('role', 'tablist');
+//       this._elButtons.forEach((el, index) => {
+//         el.dataset.index = index;
+//         el.setAttribute('role', 'tab');
+//         this._elPanes[index].setAttribute('role', 'tabpanel');
+//       });
+//     }
+//     show(elLinkTarget) {
+//       const elPaneTarget = this._elPanes[elLinkTarget.dataset.index];
+//       const elLinkActive = this._elTabs.querySelector('.tabs__btn_active');
+//       const elPaneShow = this._elTabs.querySelector('.tabs__pane_show');
+//       if (elLinkTarget === elLinkActive) {
+//         return;
+//       }
+//       elLinkActive ? elLinkActive.classList.remove('tabs__btn_active') : null;
+//       elPaneShow ? elPaneShow.classList.remove('tabs__pane_show') : null;
+//       elLinkTarget.classList.add('tabs__btn_active');
+//       elPaneTarget.classList.add('tabs__pane_show');
+//       this._elTabs.dispatchEvent(this._eventShow);
+//       elLinkTarget.focus();
+//     }
+//     showByIndex(index) {
+//       const elLinkTarget = this._elButtons[index];
+//       elLinkTarget ? this.show(elLinkTarget) : null;
+//     };
+//     _events() {
+//       this._elTabs.addEventListener('click', (e) => {
+//         const target = e.target.closest('.tabs__btn');
+//         if (target) {
+//           e.preventDefault();
+//           this.show(target);
+//         }
+//       });
+//     }
+//   }
+
+//   // инициализация .tabs как табов
+//   new ItcTabs('.tabs2');
+// });
+// document.addEventListener("DOMContentLoaded", () => {
+//   class ItcTabs {
+//     constructor(target, config) {
+//       const defaultConfig = {};
+//       this._config = Object.assign(defaultConfig, config);
+//       this._elTabs = typeof target === 'string' ? document.querySelector(target) : target;
+//       this._elButtons = this._elTabs.querySelectorAll('.tabs__btn');
+//       this._elPanes = this._elTabs.querySelectorAll('.tabs__pane');
+//       this._eventShow = new Event('tab.itc.change');
+//       this._init();
+//       this._events();
+//     }
+//     _init() {
+//       this._elTabs.setAttribute('role', 'tablist');
+//       this._elButtons.forEach((el, index) => {
+//         el.dataset.index = index;
+//         el.setAttribute('role', 'tab');
+//         this._elPanes[index].setAttribute('role', 'tabpanel');
+//       });
+//     }
+//     show(elLinkTarget) {
+//       const elPaneTarget = this._elPanes[elLinkTarget.dataset.index];
+//       const elLinkActive = this._elTabs.querySelector('.tabs__btn_active');
+//       const elPaneShow = this._elTabs.querySelector('.tabs__pane_show');
+//       if (elLinkTarget === elLinkActive) {
+//         return;
+//       }
+//       elLinkActive ? elLinkActive.classList.remove('tabs__btn_active') : null;
+//       elPaneShow ? elPaneShow.classList.remove('tabs__pane_show') : null;
+//       elLinkTarget.classList.add('tabs__btn_active');
+//       elPaneTarget.classList.add('tabs__pane_show');
+//       this._elTabs.dispatchEvent(this._eventShow);
+//       elLinkTarget.focus();
+//     }
+//     showByIndex(index) {
+//       const elLinkTarget = this._elButtons[index];
+//       elLinkTarget ? this.show(elLinkTarget) : null;
+//     };
+//     _events() {
+//       this._elTabs.addEventListener('click', (e) => {
+//         const target = e.target.closest('.tabs__btn');
+//         if (target) {
+//           e.preventDefault();
+//           this.show(target);
+//         }
+//       });
+//     }
+//   }
+
+//   // инициализация .tabs как табов
+//   new ItcTabs('.tabs3');
+// });
+// document.addEventListener("DOMContentLoaded", () => {
+//   class ItcTabs {
+//     constructor(target, config) {
+//       const defaultConfig = {};
+//       this._config = Object.assign(defaultConfig, config);
+//       this._elTabs = typeof target === 'string' ? document.querySelector(target) : target;
+//       this._elButtons = this._elTabs.querySelectorAll('.tabs__btn');
+//       this._elPanes = this._elTabs.querySelectorAll('.tabs__pane');
+//       this._eventShow = new Event('tab.itc.change');
+//       this._init();
+//       this._events();
+//     }
+//     _init() {
+//       this._elTabs.setAttribute('role', 'tablist');
+//       this._elButtons.forEach((el, index) => {
+//         el.dataset.index = index;
+//         el.setAttribute('role', 'tab');
+//         this._elPanes[index].setAttribute('role', 'tabpanel');
+//       });
+//     }
+//     show(elLinkTarget) {
+//       const elPaneTarget = this._elPanes[elLinkTarget.dataset.index];
+//       const elLinkActive = this._elTabs.querySelector('.tabs__btn_active');
+//       const elPaneShow = this._elTabs.querySelector('.tabs__pane_show');
+//       if (elLinkTarget === elLinkActive) {
+//         return;
+//       }
+//       elLinkActive ? elLinkActive.classList.remove('tabs__btn_active') : null;
+//       elPaneShow ? elPaneShow.classList.remove('tabs__pane_show') : null;
+//       elLinkTarget.classList.add('tabs__btn_active');
+//       elPaneTarget.classList.add('tabs__pane_show');
+//       this._elTabs.dispatchEvent(this._eventShow);
+//       elLinkTarget.focus();
+//     }
+//     showByIndex(index) {
+//       const elLinkTarget = this._elButtons[index];
+//       elLinkTarget ? this.show(elLinkTarget) : null;
+//     };
+//     _events() {
+//       this._elTabs.addEventListener('click', (e) => {
+//         const target = e.target.closest('.tabs__btn');
+//         if (target) {
+//           e.preventDefault();
+//           this.show(target);
+//         }
+//       });
+//     }
+//   }
+
+//   // инициализация .tabs как табов
+//   new ItcTabs('.tabs4');
+// });
+// document.addEventListener("DOMContentLoaded", () => {
+//   class ItcTabs {
+//     constructor(target, config) {
+//       const defaultConfig = {};
+//       this._config = Object.assign(defaultConfig, config);
+//       this._elTabs = typeof target === 'string' ? document.querySelector(target) : target;
+//       this._elButtons = this._elTabs.querySelectorAll('.tabs__btn');
+//       this._elPanes = this._elTabs.querySelectorAll('.tabs__pane');
+//       this._eventShow = new Event('tab.itc.change');
+//       this._init();
+//       this._events();
+//     }
+//     _init() {
+//       this._elTabs.setAttribute('role', 'tablist');
+//       this._elButtons.forEach((el, index) => {
+//         el.dataset.index = index;
+//         el.setAttribute('role', 'tab');
+//         this._elPanes[index].setAttribute('role', 'tabpanel');
+//       });
+//     }
+//     show(elLinkTarget) {
+//       const elPaneTarget = this._elPanes[elLinkTarget.dataset.index];
+//       const elLinkActive = this._elTabs.querySelector('.tabs__btn_active');
+//       const elPaneShow = this._elTabs.querySelector('.tabs__pane_show');
+//       if (elLinkTarget === elLinkActive) {
+//         return;
+//       }
+//       elLinkActive ? elLinkActive.classList.remove('tabs__btn_active') : null;
+//       elPaneShow ? elPaneShow.classList.remove('tabs__pane_show') : null;
+//       elLinkTarget.classList.add('tabs__btn_active');
+//       elPaneTarget.classList.add('tabs__pane_show');
+//       this._elTabs.dispatchEvent(this._eventShow);
+//       elLinkTarget.focus();
+//     }
+//     showByIndex(index) {
+//       const elLinkTarget = this._elButtons[index];
+//       elLinkTarget ? this.show(elLinkTarget) : null;
+//     };
+//     _events() {
+//       this._elTabs.addEventListener('click', (e) => {
+//         const target = e.target.closest('.tabs__btn');
+//         if (target) {
+//           e.preventDefault();
+//           this.show(target);
+//         }
+//       });
+//     }
+//   }
+
+//   // инициализация .tabs как табов
+//   new ItcTabs('.tabs5');
+// });
+// document.addEventListener("DOMContentLoaded", () => {
+//   class ItcTabs {
+//     constructor(target, config) {
+//       const defaultConfig = {};
+//       this._config = Object.assign(defaultConfig, config);
+//       this._elTabs = typeof target === 'string' ? document.querySelector(target) : target;
+//       this._elButtons = this._elTabs.querySelectorAll('.tabs__btn');
+//       this._elPanes = this._elTabs.querySelectorAll('.tabs__pane');
+//       this._eventShow = new Event('tab.itc.change');
+//       this._init();
+//       this._events();
+//     }
+//     _init() {
+//       this._elTabs.setAttribute('role', 'tablist');
+//       this._elButtons.forEach((el, index) => {
+//         el.dataset.index = index;
+//         el.setAttribute('role', 'tab');
+//         this._elPanes[index].setAttribute('role', 'tabpanel');
+//       });
+//     }
+//     show(elLinkTarget) {
+//       const elPaneTarget = this._elPanes[elLinkTarget.dataset.index];
+//       const elLinkActive = this._elTabs.querySelector('.tabs__btn_active');
+//       const elPaneShow = this._elTabs.querySelector('.tabs__pane_show');
+//       if (elLinkTarget === elLinkActive) {
+//         return;
+//       }
+//       elLinkActive ? elLinkActive.classList.remove('tabs__btn_active') : null;
+//       elPaneShow ? elPaneShow.classList.remove('tabs__pane_show') : null;
+//       elLinkTarget.classList.add('tabs__btn_active');
+//       elPaneTarget.classList.add('tabs__pane_show');
+//       this._elTabs.dispatchEvent(this._eventShow);
+//       elLinkTarget.focus();
+//     }
+//     showByIndex(index) {
+//       const elLinkTarget = this._elButtons[index];
+//       elLinkTarget ? this.show(elLinkTarget) : null;
+//     };
+//     _events() {
+//       this._elTabs.addEventListener('click', (e) => {
+//         const target = e.target.closest('.tabs__btn');
+//         if (target) {
+//           e.preventDefault();
+//           this.show(target);
+//         }
+//       });
+//     }
+//   }
+
+//   // инициализация .tabs как табов
+//   new ItcTabs('.tabs6');
+// });
+// document.addEventListener("DOMContentLoaded", () => {
+//   class ItcTabs {
+//     constructor(target, config) {
+//       const defaultConfig = {};
+//       this._config = Object.assign(defaultConfig, config);
+//       this._elTabs = typeof target === 'string' ? document.querySelector(target) : target;
+//       this._elButtons = this._elTabs.querySelectorAll('.tabs__btn');
+//       this._elPanes = this._elTabs.querySelectorAll('.tabs__pane');
+//       this._eventShow = new Event('tab.itc.change');
+//       this._init();
+//       this._events();
+//     }
+//     _init() {
+//       this._elTabs.setAttribute('role', 'tablist');
+//       this._elButtons.forEach((el, index) => {
+//         el.dataset.index = index;
+//         el.setAttribute('role', 'tab');
+//         this._elPanes[index].setAttribute('role', 'tabpanel');
+//       });
+//     }
+//     show(elLinkTarget) {
+//       const elPaneTarget = this._elPanes[elLinkTarget.dataset.index];
+//       const elLinkActive = this._elTabs.querySelector('.tabs__btn_active');
+//       const elPaneShow = this._elTabs.querySelector('.tabs__pane_show');
+//       if (elLinkTarget === elLinkActive) {
+//         return;
+//       }
+//       elLinkActive ? elLinkActive.classList.remove('tabs__btn_active') : null;
+//       elPaneShow ? elPaneShow.classList.remove('tabs__pane_show') : null;
+//       elLinkTarget.classList.add('tabs__btn_active');
+//       elPaneTarget.classList.add('tabs__pane_show');
+//       this._elTabs.dispatchEvent(this._eventShow);
+//       elLinkTarget.focus();
+//     }
+//     showByIndex(index) {
+//       const elLinkTarget = this._elButtons[index];
+//       elLinkTarget ? this.show(elLinkTarget) : null;
+//     };
+//     _events() {
+//       this._elTabs.addEventListener('click', (e) => {
+//         const target = e.target.closest('.tabs__btn');
+//         if (target) {
+//           e.preventDefault();
+//           this.show(target);
+//         }
+//       });
+//     }
+//   }
+
+//   // инициализация .tabs как табов
+//   new ItcTabs('.tabs7');
+// });
