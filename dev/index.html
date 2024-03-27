@@ -104,16 +104,54 @@
 							<span></span>
 						</div>
 					</div>
+					<div class="menu">
+						<ul>
+							<li>
+								<a href="#cat" class="go_to">
+									Каталог
+								</a>
+							</li>
+							<li>
+								<a href="#case" class="go_to">
+									Наши работы
+								</a>
+							</li>
+							<li>
+								<a href="#sales" class="go_to">
+									Акции
+								</a>
+							</li>
+						</ul>
+						<div class="nav__info q">
+							<div class="nav__tel">
+								<p>
+									Заказать обратный звонок
+								</p>
+								<a href="tel:+79999999999">
+									+7 (999) 999-99-99
+								</a>
+							</div>
+							<div class="nav__content q">
+								<p>
+									Среднее время ответа <br>
+									в мессенджерах: <span>13 секунд</span>
+								</p>
+								<div class="nav__socials q">
+									<a href="#" target="_blank">
+										<img src="img/a1.svg" alt="">
+									</a>
+									<a href="#" target="_blank">
+										<img src="img/a2.svg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</nav>
-			<div class="menu">
-				<a href="#" class="nav__btn btn">
-					Подарки и бонусы
-				</a>
-			</div>
 			<div class="container">
 				<div class="header__box">
-					<img src="img/clou1.png" alt="" class="header__fig">
+					<img src="img/cl1.png" alt="" class="header__fig">
 					<img src="img/main.jpg" alt="" class="header__pic">
 					<div class="header__info">
 						<h1>
@@ -136,7 +174,7 @@
 							</p>
 						</div>
 						<div class="header__item">
-							<a href="#" class="header__link go_to">
+							<a href="#calc" class="header__link go_to">
 								<img src="img/main2.png" alt="">
 								Пройти квиз
 							</a>
@@ -190,7 +228,7 @@
 		<section class="van" id="van">
 			<img src="img/tree3.png" alt="" class="tree3 tree">
 			<div class="container">
-				<img src="img/clou2.png" alt="" class="van__fig">
+				<img src="img/cl2.png" alt="" class="van__fig">
 				<h2>
 					Преимущество септика
 				</h2>
@@ -7788,16 +7826,16 @@
 						</a>
 					</div>
 					<div class="tab-content active" id="tab55">
-						<form action="#" class="cat__form q">
-							<input type="tel" placeholder="Ваш номер Telegram" class="tel">
+						<form action="success.php" class="js-form cat__form q" id="popupResult" method="post">
+							<input type="tel" placeholder="Ваш номер Telegram" class="tel" name="name">
 							<button class="btn">
 								Скачать каталог
 							</button>
 						</form>
 					</div>
 					<div class="tab-content" id="tab66">
-						<form action="#" class="cat__form q">
-							<input type="tel" placeholder="Ваш номер WhatsApp" class="tel">
+						<form action="success.php" class="js-form cat__form q" id="popupResult" method="post">
+							<input type="tel" placeholder="Ваш номер WhatsApp" name="tel" class="tel">
 							<button class="btn">
 								Скачать каталог
 							</button>
@@ -7813,6 +7851,7 @@
 			<img src="img/tree4.png" alt="" class="tree">
 			<div class="container">
 				<div class="present__wrap">
+					<img src="img/cl3.png" alt="" class="van__fig">
 					<h2>
 						При заказе септика <br>
 						вы получите <span class="blue">3 подарка на выбор!</span>
@@ -7864,6 +7903,8 @@
 			<img src="img/tree6.png" alt="" class="tree">
 			<div class="container">
 				<div class="exist__wrap">
+					<img src="img/cl4.png" alt="" class="van__fig">
+					<img src="img/cl5.png" alt="" class="van__fig2">
 					<h2>
 						Септики от производителя <br> всегда <span class="blue"> в наличие</span> на складе
 					</h2>
@@ -7931,9 +7972,9 @@
 							Чтобы определить тип грунта и уровень грунтовых вод на вашем участке, вызовите инженера на замер.
 							Это совершенно бесплатно и не обязывает вас заключать договор
 						</p>
-						<form action="#">
-							<input type="text" placeholder="Ваше имя">
-							<input type="tel" placeholder="Ваш номер" class="tel">
+						<form action="success.php" class="js-form" id="popupResult" method="post">
+							<input type="text" placeholder="Ваше имя" name="name">
+							<input type="tel" placeholder="Ваш номер" class="tel" name="tel">
 							<button class="btn">
 								Получить рассчет инженера
 							</button>
@@ -8178,6 +8219,8 @@
 					<span class="blue"> Подберем септик</span> для частного <br> дома или дачи
 				</h2>
 				<div class="calc__wrap q">
+					<img src="img/cl6.png" alt="" class="van__fig">
+					<img src="img/cl7.png" alt="" class="van__fig2">
 					<div class="calc__box">
 						<p class="calc__text">
 							Пройдите квиз из 5 вопросов и получите подборку септиков, которые подойдут для вашего участка. Это
@@ -8406,7 +8449,7 @@
 							</div>
 						</form>
 					</div>
-					<img src="img/calc.png" alt="">
+					<img src="img/calc.png" alt="" class="calc__pict">
 				</div>
 			</div>
 		</section>
@@ -8452,6 +8495,7 @@
 		<section class="van van2" id="van2">
 			<img src="img/tree9.png" alt="" class="tree">
 			<div class="container">
+				<img src="img/cl8.png" alt="" class="van__fig">
 				<h2>
 					<span class="blue"> 8 причин</span> заказать <br> септик именно у нас
 				</h2>
@@ -8659,6 +8703,7 @@
 		<section class="pay" id="pay">
 			<img src="img/tree5.png" alt="" class="tree">
 			<div class="container">
+				<img src="img/cl9.png" alt="" class="van__fig">
 				<div class="pay__box q">
 					<img src="img/pay.png" alt="" class="pay__pic">
 					<div class="pay__block">
@@ -8698,6 +8743,7 @@
 		<section class="stage" id="stage">
 			<div class="container">
 				<div class="stage__wrap">
+					<img src="img/cl9.png" alt="" class="van__fig">
 					<h2>
 						<span class="blue">Этапы</span> работ
 					</h2>
@@ -8789,6 +8835,7 @@
 			<img src="img/tree10.png" alt="" class="tree">
 			<div class="container">
 				<div class="key__wrap">
+					<img src="img/cl1.png" alt="" class="van__fig">
 					<div class="key__box q">
 						<img src="img/key.png" alt="">
 						<div class="key__content">
@@ -8812,20 +8859,1122 @@
 				</div>
 			</div>
 		</section>
+		<section class="case" id="case">
+			<img src="img/tree11.png" alt="" class="tree">
+			<div class="container">
+				<div class="case__wrap">
+					<h2>
+						<span class="blue"> Выполненные</span> работы
+					</h2>
+					<div class="swiper-button-prev3 sale__arr">
+						<img src="img/left.svg" alt="" class="svg">
+					</div>
+					<div class="swiper-button-next3  sale__arr">
+						<img src="img/right.svg" alt="" class="svg">
+					</div>
+					<div class="swiper3">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="swiper4">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div thumbsSlider="" class="swiper5">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+									</div>
+								</div>
+								<p class="case__text">
+									Установили септик модели ... на участке с высоким уровнем грунтовых вод
+								</p>
+								<div class="case__row">
+									<p>
+										Стоимость оборудования:
+									</p>
+									<p>
+										45 000 ₽
+									</p>
+								</div>
+								<div class="case__row">
+									<p>
+										Стоимость монтажа:
+									</p>
+									<p>
+										45 000 ₽
+									</p>
+								</div>
+								<div class="case__row">
+									<p>
+										Итоговая цена:
+									</p>
+									<p>
+										45 000 ₽
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper44">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div thumbsSlider="" class="swiper55">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+									</div>
+								</div>
+								<p class="case__text">
+									Установили септик модели ... на участке с высоким уровнем грунтовых вод
+								</p>
+								<div class="case__row">
+									<p>
+										Стоимость оборудования:
+									</p>
+									<p>
+										45 000 ₽
+									</p>
+								</div>
+								<div class="case__row">
+									<p>
+										Стоимость монтажа:
+									</p>
+									<p>
+										45 000 ₽
+									</p>
+								</div>
+								<div class="case__row">
+									<p>
+										Итоговая цена:
+									</p>
+									<p>
+										45 000 ₽
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper444">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div thumbsSlider="" class="swiper555">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+									</div>
+								</div>
+								<p class="case__text">
+									Установили септик модели ... на участке с высоким уровнем грунтовых вод
+								</p>
+								<div class="case__row">
+									<p>
+										Стоимость оборудования:
+									</p>
+									<p>
+										45 000 ₽
+									</p>
+								</div>
+								<div class="case__row">
+									<p>
+										Стоимость монтажа:
+									</p>
+									<p>
+										45 000 ₽
+									</p>
+								</div>
+								<div class="case__row">
+									<p>
+										Итоговая цена:
+									</p>
+									<p>
+										45 000 ₽
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper4444">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div thumbsSlider="" class="swiper5555">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/key.png" alt="">
+										</div>
+									</div>
+								</div>
+								<p class="case__text">
+									Установили септик модели ... на участке с высоким уровнем грунтовых вод
+								</p>
+								<div class="case__row">
+									<p>
+										Стоимость оборудования:
+									</p>
+									<p>
+										45 000 ₽
+									</p>
+								</div>
+								<div class="case__row">
+									<p>
+										Стоимость монтажа:
+									</p>
+									<p>
+										45 000 ₽
+									</p>
+								</div>
+								<div class="case__row">
+									<p>
+										Итоговая цена:
+									</p>
+									<p>
+										45 000 ₽
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="case__content">
+						<p>
+							Смотрите больше видео на нашем Youtube-канале
+						</p>
+						<a href="#" class="case__btn btn">
+							Смотреть
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="we" id="we">
+			<div class="container">
+				<div class="we__wrap">
+					<img src="img/cl12.png" alt="" class="van__fig">
+					<h2>
+						<span class="blue"> Мы работаем</span> в Москве <br> и Московской области
+					</h2>
+					<img src="img/we.png" alt="">
+				</div>
+			</div>
+		</section>
+		<section class="team" id="taem">
+			<img src="img/tree12.png" alt="" class="tree">
+			<div class="container">
+				<div class="team__wrap">
+					<h2>
+						<span class="blue"> Сотрудники</span> компании
+					</h2>
+					<p class="team__sub">
+						В нашей команде ... квалифицированных инженеров, бригадиров, сервисных специалистов и менеджеров. Мы
+						обеспечиваем высокое качество работ и точное соблюдение сроков.
+					</p>
+					<div class="team__box q">
+						<div class="team__tabs">
+							<button class="tab-btn61 active" data-tab="tab61">
+								Менеджеры
+							</button>
+							<button class="tab-btn61" data-tab="tab62">
+								Выездные инженеры
+							</button>
+							<button class="tab-btn61" data-tab="tab63">
+								Бригадиры
+							</button>
+							<button class="tab-btn61" data-tab="tab64">
+								Сервисный отдел
+							</button>
+						</div>
+						<div class="tab-content61 active" id="tab61">
+							<div class="team__item">
+								<img src="img/team1.png" alt="">
+								<p class="team__name">
+									Иван
+								</p>
+								<p class="team__info">
+									менеджер клиентского отдела
+								</p>
+								<p class="team__years">
+									Стаж 15 лет
+								</p>
+							</div>
+							<div class="team__item">
+								<img src="img/team2.png" alt="">
+								<p class="team__name">
+									Иван
+								</p>
+								<p class="team__info">
+									менеджер клиентского отдела
+								</p>
+								<p class="team__years">
+									Стаж 15 лет
+								</p>
+							</div>
+							<div class="team__item">
+								<img src="img/team3.png" alt="">
+								<p class="team__name">
+									Иван
+								</p>
+								<p class="team__info">
+									менеджер клиентского отдела
+								</p>
+								<p class="team__years">
+									Стаж 15 лет
+								</p>
+							</div>
+							<div class="team__item">
+								<img src="img/team4.png" alt="">
+								<p class="team__name">
+									Иван
+								</p>
+								<p class="team__info">
+									менеджер клиентского отдела
+								</p>
+								<p class="team__years">
+									Стаж 15 лет
+								</p>
+							</div>
+						</div>
+						<div class="tab-content61" id="tab62">
+							<div class="team__item">
+								<img src="img/team2.png" alt="">
+								<p class="team__name">
+									Иван
+								</p>
+								<p class="team__info">
+									менеджер клиентского отдела
+								</p>
+								<p class="team__years">
+									Стаж 15 лет
+								</p>
+							</div>
+							<div class="team__item">
+								<img src="img/team2.png" alt="">
+								<p class="team__name">
+									Иван
+								</p>
+								<p class="team__info">
+									менеджер клиентского отдела
+								</p>
+								<p class="team__years">
+									Стаж 15 лет
+								</p>
+							</div>
+							<div class="team__item">
+								<img src="img/team3.png" alt="">
+								<p class="team__name">
+									Иван
+								</p>
+								<p class="team__info">
+									менеджер клиентского отдела
+								</p>
+								<p class="team__years">
+									Стаж 15 лет
+								</p>
+							</div>
+							<div class="team__item">
+								<img src="img/team4.png" alt="">
+								<p class="team__name">
+									Иван
+								</p>
+								<p class="team__info">
+									менеджер клиентского отдела
+								</p>
+								<p class="team__years">
+									Стаж 15 лет
+								</p>
+							</div>
+						</div>
+						<div class="tab-content61" id="tab63">
+							<div class="team__item">
+								<img src="img/team3.png" alt="">
+								<p class="team__name">
+									Иван
+								</p>
+								<p class="team__info">
+									менеджер клиентского отдела
+								</p>
+								<p class="team__years">
+									Стаж 15 лет
+								</p>
+							</div>
+							<div class="team__item">
+								<img src="img/team2.png" alt="">
+								<p class="team__name">
+									Иван
+								</p>
+								<p class="team__info">
+									менеджер клиентского отдела
+								</p>
+								<p class="team__years">
+									Стаж 15 лет
+								</p>
+							</div>
+							<div class="team__item">
+								<img src="img/team3.png" alt="">
+								<p class="team__name">
+									Иван
+								</p>
+								<p class="team__info">
+									менеджер клиентского отдела
+								</p>
+								<p class="team__years">
+									Стаж 15 лет
+								</p>
+							</div>
+							<div class="team__item">
+								<img src="img/team4.png" alt="">
+								<p class="team__name">
+									Иван
+								</p>
+								<p class="team__info">
+									менеджер клиентского отдела
+								</p>
+								<p class="team__years">
+									Стаж 15 лет
+								</p>
+							</div>
+						</div>
+						<div class="tab-content61" id="tab64">
+							<div class="team__item">
+								<img src="img/team4.png" alt="">
+								<p class="team__name">
+									Иван
+								</p>
+								<p class="team__info">
+									менеджер клиентского отдела
+								</p>
+								<p class="team__years">
+									Стаж 15 лет
+								</p>
+							</div>
+							<div class="team__item">
+								<img src="img/team2.png" alt="">
+								<p class="team__name">
+									Иван
+								</p>
+								<p class="team__info">
+									менеджер клиентского отдела
+								</p>
+								<p class="team__years">
+									Стаж 15 лет
+								</p>
+							</div>
+							<div class="team__item">
+								<img src="img/team3.png" alt="">
+								<p class="team__name">
+									Иван
+								</p>
+								<p class="team__info">
+									менеджер клиентского отдела
+								</p>
+								<p class="team__years">
+									Стаж 15 лет
+								</p>
+							</div>
+							<div class="team__item">
+								<img src="img/team4.png" alt="">
+								<p class="team__name">
+									Иван
+								</p>
+								<p class="team__info">
+									менеджер клиентского отдела
+								</p>
+								<p class="team__years">
+									Стаж 15 лет
+								</p>
+							</div>
+						</div>
+						<div class="team__content">
+							<ul>
+								<li>
+									<img src="img/team.svg" alt="">
+									<p>
+										Обрабатывают заявки и консультируют по всем вопросам
+									</p>
+								</li>
+								<li>
+									<img src="img/team.svg" alt="">
+									<p>
+										Проводят замеры на участке, подбирают оптимальный размер септика
+									</p>
+								</li>
+								<li>
+									<img src="img/team.svg" alt="">
+									<p>
+										Руководят бригадами монтажников, контролируют, чтобы работы были выполнены в срок
+									</p>
+								</li>
+								<li>
+									<img src="img/team.svg" alt="">
+									<p>
+										Осуществляют гарантийное и постгарантийное обслуживание септиков
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="faq" id="faq">
+			<img src="img/faq.png" alt="" class="faq__bg">
+			<div class="container">
+				<h2>
+					Вопрос-ответ
+				</h2>
+				<div class="accordeon">
+					<div class="accordeon-container">
+						<li class="accordeon__item">
+							<div class="accordeon__button closed">Сколько стоит монтаж автономной канализации?</div>
+							<ul class="accordeon__panel">
+								<li class="panel__text">
+									Стоимость зависит от параметров системы и особенностей вашего участка.
+								</li>
+							</ul>
+						</li>
+						<li class="accordeon__item">
+							<div class="accordeon__button closed">Можно ли установить септик зимой?</div>
+							<ul class="accordeon__panel">
+								<li class="panel__text">
+									Стоимость зависит от параметров системы и особенностей вашего участка.
+								</li>
+							</ul>
+						</li>
+						<li class="accordeon__item">
+							<div class="accordeon__button closed">На каком расстоянии от дома лучше установить септик?</div>
+							<ul class="accordeon__panel">
+								<li class="panel__text">
+									Стоимость зависит от параметров системы и особенностей вашего участка.
+								</li>
+							</ul>
+						</li>
+
+						<li class="accordeon__item">
+							<div class="accordeon__button closed">Куда поступает очищенная вода из септика?</div>
+							<ul class="accordeon__panel">
+								<li class="panel__text">
+									Стоимость зависит от параметров системы и особенностей вашего участка.
+								</li>
+							</ul>
+						</li>
+						<li class="accordeon__item">
+							<div class="accordeon__button closed">Какое количество электроэнергии расходует септик?</div>
+							<ul class="accordeon__panel">
+								<li class="panel__text">
+									Стоимость зависит от параметров системы и особенностей вашего участка.
+								</li>
+							</ul>
+						</li>
+						<li class="accordeon__item">
+							<div class="accordeon__button closed">Будет ли работать септик в случае отключения электричества?
+							</div>
+							<ul class="accordeon__panel">
+								<li class="panel__text">
+									Стоимость зависит от параметров системы и особенностей вашего участка.
+								</li>
+							</ul>
+						</li>
+						<li class="accordeon__item">
+							<div class="accordeon__button closed">Работает ли септик зимой?</div>
+							<ul class="accordeon__panel">
+								<li class="panel__text">
+									Стоимость зависит от параметров системы и особенностей вашего участка.
+								</li>
+							</ul>
+						</li>
+						<li class="accordeon__item">
+							<div class="accordeon__button closed">Что такое залповый сброс?</div>
+							<ul class="accordeon__panel">
+								<li class="panel__text">
+									Стоимость зависит от параметров системы и особенностей вашего участка.
+								</li>
+							</ul>
+						</li>
+						<li class="accordeon__item">
+							<div class="accordeon__button closed">Какие воды можно сливать в септик?</div>
+							<ul class="accordeon__panel">
+								<li class="panel__text">
+									Стоимость зависит от параметров системы и особенностей вашего участка.
+								</li>
+							</ul>
+						</li>
+						<li class="accordeon__item">
+							<div class="accordeon__button closed">Что нельзя сбрасывать в септик?</div>
+							<ul class="accordeon__panel">
+								<li class="panel__text">
+									Стоимость зависит от параметров системы и особенностей вашего участка.
+								</li>
+							</ul>
+						</li>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="call" id="call">
+			<img src="img/tree14.png" alt="" class="tree">
+			<div class="container">
+				<div class="call__wrap">
+					<img src="img/cl14.png" alt="" class="van__fig">
+					<img src="img/cl13.png" alt="" class="van__fig2">
+					<h2>
+						<span class="blue">Оставьте заявку</span> <br> на бесплатный замер
+					</h2>
+					<p class="call__area">
+						Это не обязывает вас заключать договор на установку септика
+					</p>
+					<div class="call__box q">
+						<div class="call__content">
+							<p class="call__title">
+								Как происходит замер?
+							</p>
+							<ul>
+								<li>
+									Инженер проведет измерения с помощью высокоточного нивелира
+								</li>
+								<li>
+									Определит тип грунта и уровень грунтовых вод на участке
+								</li>
+								<li>
+									Порекомендует подходящий септик, учитывая ваш бюджет и особенности участка
+								</li>
+								<li>
+									Подберет место расположения септика с учетом СНиПов
+								</li>
+								<li>
+									Бесплатно подготовит схему монтажа
+								</li>
+								<li>
+									Ответит на все вопросы, связанные с выбором, монтажом и обслуживанием септика
+								</li>
+								<li>
+									Составит смету, в которую входит стоимость оборудования и монтажных работ
+								</li>
+							</ul>
+							<p class="call__one">
+								*при заключении договора стоимость не изменится
+							</p>
+							<form action="success.php" class="js-form call__form q" id="popupResult" method="post">
+								<input type="text" placeholder="Ваше имя" name="name">
+								<input type="tel" placeholder="Ваш номер" class="tel" name="tel">
+								<button class="btn">
+									Получить рассчет
+								</button>
+							</form>
+							<p class="call__sub">
+								Нажимая кнопку “Получить рассчет” вы соглашаетесь с условиями <br> обработки персональных данных
+							</p>
+						</div>
+						<div class="call__info">
+							<img src="img/call.png" alt="">
+							<p class="call__ans">
+								На вопросы отвечает
+							</p>
+							<p class="call__name">
+								Романов Олег,
+							</p>
+							<p class="call__job">
+								главный инженер
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="rev" id="rev">
+			<div class="container">
+				<div class="rev__wrap">
+					<img src="img/ya.png" alt="" class="rev__yan">
+					<h2>
+						<span class="blue">
+							Отзывы
+						</span>
+					</h2>
+					<div class="swiper-button-prev9 sale__arr">
+						<img src="img/left.svg" alt="" class="svg">
+					</div>
+					<div class="swiper-button-next9  sale__arr">
+						<img src="img/right.svg" alt="" class="svg">
+					</div>
+					<div class="swiper9">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="rev__top q">
+									<img src="img/photo.png" alt="" class="rev__ava">
+									<div class="rev__info">
+										<p class="rev__name">
+											Арзуманов М.
+										</p>
+										<p class="rev__sub">
+											Знаток города 2 уровня
+										</p>
+									</div>
+								</div>
+								<div class="rev__flex q">
+									<div class="rev__stars q">
+										<img src="img/star3.svg" alt="">
+										<img src="img/star3.svg" alt="">
+										<img src="img/star3.svg" alt="">
+										<img src="img/star3.svg" alt="">
+										<img src="img/star3.svg" alt="">
+									</div>
+									<p>
+										22 сентября 2023
+									</p>
+								</div>
+								<p class="rev__text">
+									Лучший производитель <br>
+									в регионе. Есть индивидуальный заказ. Большой выбор моделей.
+								</p>
+								<a href="#">
+									Посмотреть отзыв на Я. Картах
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<div class="rev__top q">
+									<img src="img/photo.png" alt="" class="rev__ava">
+									<div class="rev__info">
+										<p class="rev__name">
+											Арзуманов М.
+										</p>
+										<p class="rev__sub">
+											Знаток города 2 уровня
+										</p>
+									</div>
+								</div>
+								<div class="rev__flex q">
+									<div class="rev__stars q">
+										<img src="img/star3.svg" alt="">
+										<img src="img/star3.svg" alt="">
+										<img src="img/star3.svg" alt="">
+										<img src="img/star3.svg" alt="">
+										<img src="img/star3.svg" alt="">
+									</div>
+									<p>
+										22 сентября 2023
+									</p>
+								</div>
+								<p class="rev__text">
+									Лучший производитель <br>
+									в регионе. Есть индивидуальный заказ. Большой выбор моделей.
+								</p>
+								<a href="#">
+									Посмотреть отзыв на Я. Картах
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<div class="rev__top q">
+									<img src="img/photo.png" alt="" class="rev__ava">
+									<div class="rev__info">
+										<p class="rev__name">
+											Арзуманов М.
+										</p>
+										<p class="rev__sub">
+											Знаток города 2 уровня
+										</p>
+									</div>
+								</div>
+								<div class="rev__flex q">
+									<div class="rev__stars q">
+										<img src="img/star3.svg" alt="">
+										<img src="img/star3.svg" alt="">
+										<img src="img/star3.svg" alt="">
+										<img src="img/star3.svg" alt="">
+										<img src="img/star3.svg" alt="">
+									</div>
+									<p>
+										22 сентября 2023
+									</p>
+								</div>
+								<p class="rev__text">
+									Лучший производитель <br>
+									в регионе. Есть индивидуальный заказ. Большой выбор моделей.
+								</p>
+								<a href="#">
+									Посмотреть отзыв на Я. Картах
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<div class="rev__top q">
+									<img src="img/photo.png" alt="" class="rev__ava">
+									<div class="rev__info">
+										<p class="rev__name">
+											Арзуманов М.
+										</p>
+										<p class="rev__sub">
+											Знаток города 2 уровня
+										</p>
+									</div>
+								</div>
+								<div class="rev__flex q">
+									<div class="rev__stars q">
+										<img src="img/star3.svg" alt="">
+										<img src="img/star3.svg" alt="">
+										<img src="img/star3.svg" alt="">
+										<img src="img/star3.svg" alt="">
+										<img src="img/star3.svg" alt="">
+									</div>
+									<p>
+										22 сентября 2023
+									</p>
+								</div>
+								<p class="rev__text">
+									Лучший производитель <br>
+									в регионе. Есть индивидуальный заказ. Большой выбор моделей.
+								</p>
+								<a href="#">
+									Посмотреть отзыв на Я. Картах
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="more" id="more">
+			<img src="img/tree13.png" alt="" class="tree">
+			<div class="container">
+				<div class="more__wrap">
+					<h2>
+						<span class="blue"> Дополнительные</span> услуги
+					</h2>
+					<div class="more__box q">
+						<div class="more__item">
+							<div class="more__block q">
+								<img src="img/more1.svg" alt="">
+							</div>
+							<p>
+								Автономная <br> канализация
+							</p>
+							<span>
+								от 2000 руб.
+							</span>
+						</div>
+						<div class="more__item">
+							<div class="more__block q">
+								<img src="img/more2.svg" alt="">
+							</div>
+							<p>
+								Дренажные <br>
+								системы
+							</p>
+							<span>
+								от 2000 руб.
+							</span>
+						</div>
+						<div class="more__item">
+							<div class="more__block q">
+								<img src="img/more3.svg" alt="">
+							</div>
+							<p>
+								Бурение <br>
+								скважин
+							</p>
+							<span>
+								от 2000 руб.
+							</span>
+						</div>
+						<div class="more__item">
+							<div class="more__block q">
+								<img src="img/more4.svg" alt="">
+							</div>
+							<p>
+								Водоподготовка
+							</p>
+							<span>
+								от 2000 руб.
+							</span>
+						</div>
+						<div class="more__item">
+							<div class="more__block q">
+								<img src="img/more5.svg" alt="">
+							</div>
+							<p>
+								Водоочистка
+							</p>
+							<span>
+								от 2000 руб.
+							</span>
+						</div>
+						<div class="more__item">
+							<div class="more__block q">
+								<img src="img/more6.svg" alt="">
+							</div>
+							<p>
+								Пластиковые <br>
+								погреба
+							</p>
+							<span>
+								от 2000 руб.
+							</span>
+						</div>
+						<div class="more__item">
+							<div class="more__block q">
+								<img src="img/more7.svg" alt="">
+							</div>
+							<p>
+								Обустройство <br>
+								скважин
+							</p>
+							<span>
+								от 2000 руб.
+							</span>
+						</div>
+						<div class="more__item">
+							<div class="more__block q">
+								<img src="img/more8.svg" alt="">
+							</div>
+							<p>
+								Ливневая <br>
+								канализация
+							</p>
+							<span>
+								от 2000 руб.
+							</span>
+						</div>
+						<div class="more__item">
+							<div class="more__block q">
+								<img src="img/more9.svg" alt="">
+							</div>
+							<p>
+								Накопительные <br>
+								емкости
+							</p>
+							<span>
+								от 2000 руб.
+							</span>
+						</div>
+						<div class="more__item">
+							<div class="more__block q">
+								<img src="img/more10.svg" alt="">
+							</div>
+							<p>
+								Системы <br>
+								отопления
+							</p>
+							<span>
+								от 2000 руб.
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="ser" id="ser">
+			<div class="container">
+				<h2>
+					<span class="blue">
+						Сертификаты и лицензии
+					</span>
+				</h2>
+				<div class="swiper-button-prev10 sale__arr">
+					<img src="img/left.svg" alt="" class="svg">
+				</div>
+				<div class="swiper-button-next10  sale__arr">
+					<img src="img/right.svg" alt="" class="svg">
+				</div>
+				<div class="swiper10">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/ser.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/ser.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/ser.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/ser.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/ser.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/ser.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/ser.png" alt="">
+						</div>
+					</div>
+				</div>
+		</section>
+		<footer class="footer" id="footer">
+			<img src="img/tree15.png" alt="" class="tree">
+			<div class="container">
+				<div class="footer__box q">
+					<div class="footer__content">
+						<img src="img/footer-logo.svg" alt="" class="footer__logo">
+						<div class="footer__flex q">
+							<div class="nav__tel">
+								<p>
+									Заказать обратный звонок
+								</p>
+								<a href="tel:+79999999999">
+									+7 (999) 999-99-99
+								</a>
+							</div>
+							<div class="nav__tel">
+								<p>
+									E-mail
+								</p>
+								<a href="mailto:septikmax@mail.ru">
+									septikmax@mail.ru
+								</a>
+							</div>
+						</div>
+						<div class="nav__info q">
+							<div class="nav__content q">
+								<p>
+									Среднее время ответа <br>
+									в мессенджерах: <span>13 секунд</span>
+								</p>
+								<div class="nav__socials q">
+									<a href="#" target="_blank">
+										<img src="img/a1.svg" alt="">
+									</a>
+									<a href="#" target="_blank">
+										<img src="img/a2.svg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+						<p class="footer__name">
+							Как до нас добраться?
+						</p>
+						<div class="footer__flex footer__flex_2 q">
+							<div class="nav__tel">
+								<p>
+									Адрес
+								</p>
+								<p class="footer__text">
+									Москва, <br> ул. Ленина, д.31
+								</p>
+							</div>
+							<div class="nav__tel">
+								<p>
+									Режим работы
+								</p>
+								<p class="footer__text">
+									Пн-Сб 10:00-21:00 <br>
+									Вс <span> Выходной</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<img src="img/footer.png" alt="" class="footer__pic">
+					<div id="map"></div>
+				</div>
+			</div>
+		</footer>
 		<div class="popup__bg" id="popup">
-			<div class="popup2">
-				<img src="/img/close.png" alt="" class="close-popup">
+			<div class="popup">
+				<img src="img/pop1.png" alt="" class="popup__pic">
+				<img src="img/pop2.png" alt="" class="popup__pic2">
+				<img src="img/close.svg" alt="" class="close-popup">
 				<div class="popup__wrap">
 					<p class="popup__title">
-						Обратный звонок
+						Получите бесплатную <br> консультацию
 					</p>
-					<form action="success.php" class="order__form js-form" id="popupResult" method="post">
-						<input type="text" name="name" required="" placeholder="Ваше имя" class="order__input form__field">
-						<input type="tel" name="tel" required="" placeholder="Ваш номер телефона"
-							class="order__input tel form__field">
-						<button class="order__btn btn" data-submit>
-							Перезвоните мне
-						</button>
+					<p class="popup__text">
+						Инженер подберет оптимальный вариант <br> септика для вашего участка
+					</p>
+					<form action="success.php" class="js-form" id="popupResult" method="post">
+						<div class="popup__flex q">
+							<input type="text" name="name" required="" placeholder="Ваше имя" class="form__field">
+							<input type="tel" name="tel" required="" placeholder="Ваш номер" class="tel form__field">
+						</div>
+						<div class="popup__row q">
+							<button class="order__btn btn" data-submit>
+								Получить рассчет
+							</button>
+							<p>
+								Нажимая кнопку “Получить рассчет” вы соглашаетесь с условиями обработки персональных данных
+							</p>
+						</div>
 					</form>
 				</div>
 			</div>
@@ -8836,7 +9985,7 @@
 			function init() {
 				var myMap = new ymaps.Map("map", {
 					// Центр карты, указываем коордианты
-					center: [59.845537, 30.322902],
+					center: [55.633897, 37.254186],
 					// Масштаб, тут все просто
 					zoom: 11,
 					// Отключаем все элементы управления
@@ -8846,14 +9995,14 @@
 				var myGeoObjects = [];
 
 				// Наша метка, указываем коордианты
-				myGeoObjects = new ymaps.Placemark([59.845537, 30.322902], {
-					balloonContentBody: 'ЧистоGUN',
+				myGeoObjects = new ymaps.Placemark([55.633897, 37.254186], {
+					balloonContentBody: 'Septiki',
 				}, {
 					iconLayout: 'default#image',
 					// Путь до нашей картинки
 					iconImageHref: 'img/map.svg',
 					// Размер по ширине и высоте
-					iconImageSize: [50, 70],
+					iconImageSize: [30, 50],
 					// Смещение левого верхнего угла иконки относительно
 					// её «ножки» (точки привязки).
 					iconImageOffset: [-35, -35]

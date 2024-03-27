@@ -1,23 +1,5 @@
 
 document.addEventListener('DOMContentLoaded', function () {
-  // $(window).on('load', function () {
-  //   $(".calc__btn_one").prop('disabled', !$("input[name='forms']:checked").length);
-  //   $("input[name='forms']").on('change', function () {
-  //     $(".calc__btn_one").prop('disabled', !$("input[name='forms']:checked").length);
-  //   });
-  //   $(".calc__btn_two").prop('disabled', !$("input[name='forms']:checked").length);
-  //   $("input[name='forms']").on('change', function () {
-  //     $(".calc__btn_two").prop('disabled', !$("input[name='forms']:checked").length);
-  //   });
-  //   $(".calc__btn_three").prop('disabled', !$("input[name='forms']:checked").length);
-  //   $("input[name='forms']").on('change', function () {
-  //     $(".calc__btn_three").prop('disabled', !$("input[name='forms']:checked").length);
-  //   });
-  //   $(".calc__btn_four").prop('disabled', !$("input[name='forms']:checked").length);
-  //   $("input[name='forms']").on('change', function () {
-  //     $(".calc__btn_four").prop('disabled', !$("input[name='forms']:checked").length);
-  //   });
-  // });
   $('.calc__btn_one').click(function (event) {
     $('.calc__one').css('display', 'none');
     $('.calc__two').fadeIn();
@@ -61,6 +43,90 @@ document.addEventListener('DOMContentLoaded', function () {
     $('.calc__five').css('display', 'none');
     $('.calc__four').fadeIn();
     return false;
+  });
+
+});
+document.addEventListener("DOMContentLoaded", () => {
+  $(document).ready(function () {
+    $('[data-submit]').on('click', function (e) {
+      e.preventDefault();
+      $(this).parents('form').submit();
+    })
+    $.validator.addMethod(
+      "regex",
+      function (value, element, regexp) {
+        var re = new RegExp(regexp);
+        return this.optional(element) || re.test(value);
+      },
+      "Please check your input."
+    );
+    function valEl(el) {
+
+      el.validate({
+        rules: {
+          tel: {
+            required: true,
+            regex: '^([\+]+)*[0-9\x20\x28\x29\-]{5,20}$'
+          },
+          name: {
+            required: true
+          }
+        },
+        messages: {
+          tel: {
+            required: 'Заполните поле',
+            regex: 'Телефон может содержать символы + - ()'
+          },
+          name: {
+            required: 'Заполните поле',
+          },
+          check: {
+            required: 'Поставьте галочку',
+          },
+          mail: {
+            required: 'Заполните поле',
+            email: 'Неверный формат E-mail'
+          }
+        },
+        submitHandler: function (form) {
+          $('#loader').fadeIn();
+          var $form = $(form);
+          var $formId = $(form).attr('id');
+          switch ($formId) {
+            case 'popupResult':
+              $.ajax({
+                type: 'POST',
+                url: $form.attr('action'),
+                data: $form.serialize(),
+              })
+                .always(function (response) {
+                  setTimeout(function () {
+                    $('#loader').fadeOut();
+                  }, 800);
+                  setTimeout(function () {
+                    $.arcticmodal('close');
+                    $('#popup-thank').arcticmodal({});
+                    $form.trigger('reset');
+                    //строки для остлеживания целей в Я.Метрике и Google Analytics
+                  }, 1100);
+
+                });
+              break;
+          }
+          return false;
+        }
+      })
+    }
+
+    $('.js-form').each(function () {
+      valEl($(this));
+    });
+    $('[data-scroll]').on('click', function () {
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'data-scroll')).offset().top
+      }, 2000);
+      event.preventDefault();
+    })
   });
 
 });
@@ -159,7 +225,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //popup1
   let popupBg = document.querySelector('.popup__bg');
   let popup = document.querySelector('.popup');
-  let openPopupButtons = document.querySelectorAll('.card__basket');
+  let openPopupButtons = document.querySelectorAll('.header__btn');
   let closePopupButton = document.querySelector('.close-popup');
 
   openPopupButtons.forEach((button) => {
@@ -205,12 +271,12 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 1
       },
       767: {
-        spaceBetween: 10,
-        slidesPerView: 2
+        spaceBetween: 20,
+        slidesPerView: 4
       },
       992: {
         spaceBetween: 20,
-        slidesPerView: 3
+        slidesPerView: 5
       },
       1200: {
         spaceBetween: 30,
@@ -247,14 +313,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
   const swiper3 = new Swiper('.swiper3', {
-    slidesPerView: 4,
-    spaceBetween: 69,
-    pagination: {
-      el: ".swiper-pagination4",
-    },
+    slidesPerView: 3,
+    spaceBetween: 22,
     navigation: {
-      nextEl: '.swiper-button-next4',
-      prevEl: '.swiper-button-prev4',
+      nextEl: '.swiper-button-next3',
+      prevEl: '.swiper-button-prev3',
     },
     breakpoints: {
       // when window width is >= 320px
@@ -264,28 +327,53 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 1
       },
       767: {
-        spaceBetween: 10,
-        slidesPerView: 3
+        spaceBetween: 20,
+        slidesPerView: 2
       },
       992: {
         spaceBetween: 20,
-        slidesPerView: 4
+        slidesPerView: 3
       },
       1200: {
-        spaceBetween: 69,
-        slidesPerView: 4
+        spaceBetween: 22,
+        slidesPerView: 3
       }
     }
   });
-  const swiper33 = new Swiper('.swiper33', {
-    slidesPerView: 4,
-    spaceBetween: 28,
-    pagination: {
-      el: ".swiper-pagination4",
-    },
+  const swiper9 = new Swiper('.swiper9', {
+    slidesPerView: 3,
+    spaceBetween: 30,
     navigation: {
-      nextEl: '.swiper-button-next4',
-      prevEl: '.swiper-button-prev4',
+      nextEl: '.swiper-button-next9',
+      prevEl: '.swiper-button-prev9',
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        spaceBetween: 0,
+        loop: true,
+        slidesPerView: 1
+      },
+      767: {
+        spaceBetween: 20,
+        slidesPerView: 2
+      },
+      992: {
+        spaceBetween: 20,
+        slidesPerView: 2
+      },
+      1200: {
+        spaceBetween: 30,
+        slidesPerView: 3
+      }
+    }
+  });
+  const swiper10 = new Swiper('.swiper10', {
+    slidesPerView: 6,
+    spaceBetween: 21,
+    navigation: {
+      nextEl: '.swiper-button-next10',
+      prevEl: '.swiper-button-prev10',
     },
     breakpoints: {
       // when window width is >= 320px
@@ -303,10 +391,58 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 4
       },
       1200: {
-        spaceBetween: 28,
-        slidesPerView: 4
+        spaceBetween: 21,
+        slidesPerView: 6
       }
     }
+  });
+  var swiper5 = new Swiper(".swiper5", {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper4 = new Swiper(".swiper4", {
+    spaceBetween: 0,
+    thumbs: {
+      swiper: swiper5,
+    },
+  });
+  var swiper55 = new Swiper(".swiper55", {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper44 = new Swiper(".swiper44", {
+    spaceBetween: 0,
+    thumbs: {
+      swiper: swiper55,
+    },
+  });
+  var swiper555 = new Swiper(".swiper555", {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper444 = new Swiper(".swiper444", {
+    spaceBetween: 0,
+    thumbs: {
+      swiper: swiper555,
+    },
+  });
+  var swiper5555 = new Swiper(".swiper5555", {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper4444 = new Swiper(".swiper4444", {
+    spaceBetween: 0,
+    thumbs: {
+      swiper: swiper5555,
+    },
   });
 });
 document.addEventListener("DOMContentLoaded", () => {
@@ -538,6 +674,44 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll('.tab-btn61');
+  const subTabs = document.querySelectorAll('.sub-tab-btn61');
+  const tabContents = document.querySelectorAll('.tab-content61');
+  const subTabContents = document.querySelectorAll('.sub-tab-content');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const tabData = tab.getAttribute('data-tab');
+      tabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.getAttribute('id') === tabData) {
+          content.classList.add('active');
+        }
+      });
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+      });
+      tab.classList.add('active');
+    });
+  });
+
+  subTabs.forEach(subTab => {
+    subTab.addEventListener('click', () => {
+      const subTabData = subTab.getAttribute('data-tab');
+      subTabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.getAttribute('id') === subTabData) {
+          content.classList.add('active');
+        }
+      });
+      subTabs.forEach(subTab => {
+        subTab.classList.remove('active');
+      });
+      subTab.classList.add('active');
+    });
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
   let menuBtn = document.querySelector('.menu-btn');
   let menu = document.querySelector('.menu');
   menuBtn.addEventListener('click', function () {
@@ -581,369 +755,3 @@ $(function () {
 
   });
 });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   class ItcTabs {
-//     constructor(target, config) {
-//       const defaultConfig = {};
-//       this._config = Object.assign(defaultConfig, config);
-//       this._elTabs = typeof target === 'string' ? document.querySelector(target) : target;
-//       this._elButtons = this._elTabs.querySelectorAll('.swiper1 .tabs__btn');
-//       this._elPanes = this._elTabs.querySelectorAll('.tabs__pane');
-//       this._eventShow = new Event('tab.itc.change');
-//       this._init();
-//       this._events();
-//     }
-//     _init() {
-//       this._elTabs.setAttribute('role', 'tablist');
-//       this._elButtons.forEach((el, index) => {
-//         el.dataset.index = index;
-//         el.setAttribute('role', 'tab');
-//         this._elPanes[index].setAttribute('role', 'tabpanel');
-//       });
-//     }
-//     show(elLinkTarget) {
-//       const elPaneTarget = this._elPanes[elLinkTarget.dataset.index];
-//       const elLinkActive = this._elTabs.querySelector('.swiper1 .tabs__btn_active');
-//       const elPaneShow = this._elTabs.querySelector('.tabs__pane_show');
-//       if (elLinkTarget === elLinkActive) {
-//         return;
-//       }
-//       elLinkActive ? elLinkActive.classList.remove('tabs__btn_active') : null;
-//       elPaneShow ? elPaneShow.classList.remove('tabs__pane_show') : null;
-//       elLinkTarget.classList.add('tabs__btn_active');
-//       elPaneTarget.classList.add('tabs__pane_show');
-//       this._elTabs.dispatchEvent(this._eventShow);
-//       elLinkTarget.focus();
-//     }
-//     showByIndex(index) {
-//       const elLinkTarget = this._elButtons[index];
-//       elLinkTarget ? this.show(elLinkTarget) : null;
-//     };
-//     _events() {
-//       this._elTabs.addEventListener('click', (e) => {
-//         const target = e.target.closest('.tabs__btn');
-//         if (target) {
-//           e.preventDefault();
-//           this.show(target);
-//         }
-//       });
-//     }
-//   }
-
-//   // инициализация .tabs как табов
-//   new ItcTabs('.tabs');
-// });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   class ItcTabs {
-//     constructor(target, config) {
-//       const defaultConfig = {};
-//       this._config = Object.assign(defaultConfig, config);
-//       this._elTabs = typeof target === 'string' ? document.querySelector(target) : target;
-//       this._elButtons = this._elTabs.querySelectorAll('.tabs__btn');
-//       this._elPanes = this._elTabs.querySelectorAll('.tabs__pane');
-//       this._eventShow = new Event('tab.itc.change');
-//       this._init();
-//       this._events();
-//     }
-//     _init() {
-//       this._elTabs.setAttribute('role', 'tablist');
-//       this._elButtons.forEach((el, index) => {
-//         el.dataset.index = index;
-//         el.setAttribute('role', 'tab');
-//         this._elPanes[index].setAttribute('role', 'tabpanel');
-//       });
-//     }
-//     show(elLinkTarget) {
-//       const elPaneTarget = this._elPanes[elLinkTarget.dataset.index];
-//       const elLinkActive = this._elTabs.querySelector('.tabs__btn_active');
-//       const elPaneShow = this._elTabs.querySelector('.tabs__pane_show');
-//       if (elLinkTarget === elLinkActive) {
-//         return;
-//       }
-//       elLinkActive ? elLinkActive.classList.remove('tabs__btn_active') : null;
-//       elPaneShow ? elPaneShow.classList.remove('tabs__pane_show') : null;
-//       elLinkTarget.classList.add('tabs__btn_active');
-//       elPaneTarget.classList.add('tabs__pane_show');
-//       this._elTabs.dispatchEvent(this._eventShow);
-//       elLinkTarget.focus();
-//     }
-//     showByIndex(index) {
-//       const elLinkTarget = this._elButtons[index];
-//       elLinkTarget ? this.show(elLinkTarget) : null;
-//     };
-//     _events() {
-//       this._elTabs.addEventListener('click', (e) => {
-//         const target = e.target.closest('.tabs__btn');
-//         if (target) {
-//           e.preventDefault();
-//           this.show(target);
-//         }
-//       });
-//     }
-//   }
-
-//   // инициализация .tabs как табов
-//   new ItcTabs('.tabs2');
-// });
-// document.addEventListener("DOMContentLoaded", () => {
-//   class ItcTabs {
-//     constructor(target, config) {
-//       const defaultConfig = {};
-//       this._config = Object.assign(defaultConfig, config);
-//       this._elTabs = typeof target === 'string' ? document.querySelector(target) : target;
-//       this._elButtons = this._elTabs.querySelectorAll('.tabs__btn');
-//       this._elPanes = this._elTabs.querySelectorAll('.tabs__pane');
-//       this._eventShow = new Event('tab.itc.change');
-//       this._init();
-//       this._events();
-//     }
-//     _init() {
-//       this._elTabs.setAttribute('role', 'tablist');
-//       this._elButtons.forEach((el, index) => {
-//         el.dataset.index = index;
-//         el.setAttribute('role', 'tab');
-//         this._elPanes[index].setAttribute('role', 'tabpanel');
-//       });
-//     }
-//     show(elLinkTarget) {
-//       const elPaneTarget = this._elPanes[elLinkTarget.dataset.index];
-//       const elLinkActive = this._elTabs.querySelector('.tabs__btn_active');
-//       const elPaneShow = this._elTabs.querySelector('.tabs__pane_show');
-//       if (elLinkTarget === elLinkActive) {
-//         return;
-//       }
-//       elLinkActive ? elLinkActive.classList.remove('tabs__btn_active') : null;
-//       elPaneShow ? elPaneShow.classList.remove('tabs__pane_show') : null;
-//       elLinkTarget.classList.add('tabs__btn_active');
-//       elPaneTarget.classList.add('tabs__pane_show');
-//       this._elTabs.dispatchEvent(this._eventShow);
-//       elLinkTarget.focus();
-//     }
-//     showByIndex(index) {
-//       const elLinkTarget = this._elButtons[index];
-//       elLinkTarget ? this.show(elLinkTarget) : null;
-//     };
-//     _events() {
-//       this._elTabs.addEventListener('click', (e) => {
-//         const target = e.target.closest('.tabs__btn');
-//         if (target) {
-//           e.preventDefault();
-//           this.show(target);
-//         }
-//       });
-//     }
-//   }
-
-//   // инициализация .tabs как табов
-//   new ItcTabs('.tabs3');
-// });
-// document.addEventListener("DOMContentLoaded", () => {
-//   class ItcTabs {
-//     constructor(target, config) {
-//       const defaultConfig = {};
-//       this._config = Object.assign(defaultConfig, config);
-//       this._elTabs = typeof target === 'string' ? document.querySelector(target) : target;
-//       this._elButtons = this._elTabs.querySelectorAll('.tabs__btn');
-//       this._elPanes = this._elTabs.querySelectorAll('.tabs__pane');
-//       this._eventShow = new Event('tab.itc.change');
-//       this._init();
-//       this._events();
-//     }
-//     _init() {
-//       this._elTabs.setAttribute('role', 'tablist');
-//       this._elButtons.forEach((el, index) => {
-//         el.dataset.index = index;
-//         el.setAttribute('role', 'tab');
-//         this._elPanes[index].setAttribute('role', 'tabpanel');
-//       });
-//     }
-//     show(elLinkTarget) {
-//       const elPaneTarget = this._elPanes[elLinkTarget.dataset.index];
-//       const elLinkActive = this._elTabs.querySelector('.tabs__btn_active');
-//       const elPaneShow = this._elTabs.querySelector('.tabs__pane_show');
-//       if (elLinkTarget === elLinkActive) {
-//         return;
-//       }
-//       elLinkActive ? elLinkActive.classList.remove('tabs__btn_active') : null;
-//       elPaneShow ? elPaneShow.classList.remove('tabs__pane_show') : null;
-//       elLinkTarget.classList.add('tabs__btn_active');
-//       elPaneTarget.classList.add('tabs__pane_show');
-//       this._elTabs.dispatchEvent(this._eventShow);
-//       elLinkTarget.focus();
-//     }
-//     showByIndex(index) {
-//       const elLinkTarget = this._elButtons[index];
-//       elLinkTarget ? this.show(elLinkTarget) : null;
-//     };
-//     _events() {
-//       this._elTabs.addEventListener('click', (e) => {
-//         const target = e.target.closest('.tabs__btn');
-//         if (target) {
-//           e.preventDefault();
-//           this.show(target);
-//         }
-//       });
-//     }
-//   }
-
-//   // инициализация .tabs как табов
-//   new ItcTabs('.tabs4');
-// });
-// document.addEventListener("DOMContentLoaded", () => {
-//   class ItcTabs {
-//     constructor(target, config) {
-//       const defaultConfig = {};
-//       this._config = Object.assign(defaultConfig, config);
-//       this._elTabs = typeof target === 'string' ? document.querySelector(target) : target;
-//       this._elButtons = this._elTabs.querySelectorAll('.tabs__btn');
-//       this._elPanes = this._elTabs.querySelectorAll('.tabs__pane');
-//       this._eventShow = new Event('tab.itc.change');
-//       this._init();
-//       this._events();
-//     }
-//     _init() {
-//       this._elTabs.setAttribute('role', 'tablist');
-//       this._elButtons.forEach((el, index) => {
-//         el.dataset.index = index;
-//         el.setAttribute('role', 'tab');
-//         this._elPanes[index].setAttribute('role', 'tabpanel');
-//       });
-//     }
-//     show(elLinkTarget) {
-//       const elPaneTarget = this._elPanes[elLinkTarget.dataset.index];
-//       const elLinkActive = this._elTabs.querySelector('.tabs__btn_active');
-//       const elPaneShow = this._elTabs.querySelector('.tabs__pane_show');
-//       if (elLinkTarget === elLinkActive) {
-//         return;
-//       }
-//       elLinkActive ? elLinkActive.classList.remove('tabs__btn_active') : null;
-//       elPaneShow ? elPaneShow.classList.remove('tabs__pane_show') : null;
-//       elLinkTarget.classList.add('tabs__btn_active');
-//       elPaneTarget.classList.add('tabs__pane_show');
-//       this._elTabs.dispatchEvent(this._eventShow);
-//       elLinkTarget.focus();
-//     }
-//     showByIndex(index) {
-//       const elLinkTarget = this._elButtons[index];
-//       elLinkTarget ? this.show(elLinkTarget) : null;
-//     };
-//     _events() {
-//       this._elTabs.addEventListener('click', (e) => {
-//         const target = e.target.closest('.tabs__btn');
-//         if (target) {
-//           e.preventDefault();
-//           this.show(target);
-//         }
-//       });
-//     }
-//   }
-
-//   // инициализация .tabs как табов
-//   new ItcTabs('.tabs5');
-// });
-// document.addEventListener("DOMContentLoaded", () => {
-//   class ItcTabs {
-//     constructor(target, config) {
-//       const defaultConfig = {};
-//       this._config = Object.assign(defaultConfig, config);
-//       this._elTabs = typeof target === 'string' ? document.querySelector(target) : target;
-//       this._elButtons = this._elTabs.querySelectorAll('.tabs__btn');
-//       this._elPanes = this._elTabs.querySelectorAll('.tabs__pane');
-//       this._eventShow = new Event('tab.itc.change');
-//       this._init();
-//       this._events();
-//     }
-//     _init() {
-//       this._elTabs.setAttribute('role', 'tablist');
-//       this._elButtons.forEach((el, index) => {
-//         el.dataset.index = index;
-//         el.setAttribute('role', 'tab');
-//         this._elPanes[index].setAttribute('role', 'tabpanel');
-//       });
-//     }
-//     show(elLinkTarget) {
-//       const elPaneTarget = this._elPanes[elLinkTarget.dataset.index];
-//       const elLinkActive = this._elTabs.querySelector('.tabs__btn_active');
-//       const elPaneShow = this._elTabs.querySelector('.tabs__pane_show');
-//       if (elLinkTarget === elLinkActive) {
-//         return;
-//       }
-//       elLinkActive ? elLinkActive.classList.remove('tabs__btn_active') : null;
-//       elPaneShow ? elPaneShow.classList.remove('tabs__pane_show') : null;
-//       elLinkTarget.classList.add('tabs__btn_active');
-//       elPaneTarget.classList.add('tabs__pane_show');
-//       this._elTabs.dispatchEvent(this._eventShow);
-//       elLinkTarget.focus();
-//     }
-//     showByIndex(index) {
-//       const elLinkTarget = this._elButtons[index];
-//       elLinkTarget ? this.show(elLinkTarget) : null;
-//     };
-//     _events() {
-//       this._elTabs.addEventListener('click', (e) => {
-//         const target = e.target.closest('.tabs__btn');
-//         if (target) {
-//           e.preventDefault();
-//           this.show(target);
-//         }
-//       });
-//     }
-//   }
-
-//   // инициализация .tabs как табов
-//   new ItcTabs('.tabs6');
-// });
-// document.addEventListener("DOMContentLoaded", () => {
-//   class ItcTabs {
-//     constructor(target, config) {
-//       const defaultConfig = {};
-//       this._config = Object.assign(defaultConfig, config);
-//       this._elTabs = typeof target === 'string' ? document.querySelector(target) : target;
-//       this._elButtons = this._elTabs.querySelectorAll('.tabs__btn');
-//       this._elPanes = this._elTabs.querySelectorAll('.tabs__pane');
-//       this._eventShow = new Event('tab.itc.change');
-//       this._init();
-//       this._events();
-//     }
-//     _init() {
-//       this._elTabs.setAttribute('role', 'tablist');
-//       this._elButtons.forEach((el, index) => {
-//         el.dataset.index = index;
-//         el.setAttribute('role', 'tab');
-//         this._elPanes[index].setAttribute('role', 'tabpanel');
-//       });
-//     }
-//     show(elLinkTarget) {
-//       const elPaneTarget = this._elPanes[elLinkTarget.dataset.index];
-//       const elLinkActive = this._elTabs.querySelector('.tabs__btn_active');
-//       const elPaneShow = this._elTabs.querySelector('.tabs__pane_show');
-//       if (elLinkTarget === elLinkActive) {
-//         return;
-//       }
-//       elLinkActive ? elLinkActive.classList.remove('tabs__btn_active') : null;
-//       elPaneShow ? elPaneShow.classList.remove('tabs__pane_show') : null;
-//       elLinkTarget.classList.add('tabs__btn_active');
-//       elPaneTarget.classList.add('tabs__pane_show');
-//       this._elTabs.dispatchEvent(this._eventShow);
-//       elLinkTarget.focus();
-//     }
-//     showByIndex(index) {
-//       const elLinkTarget = this._elButtons[index];
-//       elLinkTarget ? this.show(elLinkTarget) : null;
-//     };
-//     _events() {
-//       this._elTabs.addEventListener('click', (e) => {
-//         const target = e.target.closest('.tabs__btn');
-//         if (target) {
-//           e.preventDefault();
-//           this.show(target);
-//         }
-//       });
-//     }
-//   }
-
-//   // инициализация .tabs как табов
-//   new ItcTabs('.tabs7');
-// });
