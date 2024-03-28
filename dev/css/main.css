@@ -301,96 +301,96 @@ html *::-webkit-scrollbar-thumb {
 
 @font-face {
   font-family: 'Proxima Nova Rg';
-  src: url("/fonts/ProximaNova-Regular.eot");
-  src: url("/fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/ProximaNova-Regular.woff2") format("woff2"), url("/fonts/ProximaNova-Regular.woff") format("woff"), url("/fonts/ProximaNova-Regular.ttf") format("truetype"), url("/fonts/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Exo 2.0';
-  src: url("/fonts/Exo20-Regular.eot");
-  src: url("/fonts/Exo20-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Exo20-Regular.woff2") format("woff2"), url("/fonts/Exo20-Regular.woff") format("woff"), url("/fonts/Exo20-Regular.ttf") format("truetype"), url("/fonts/Exo20-Regular.svg#Exo2.0-Regular") format("svg");
+  src: url("../fonts/Exo20-Regular.eot");
+  src: url("../fonts/Exo20-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Exo20-Regular.woff2") format("woff2"), url("../fonts/Exo20-Regular.woff") format("woff"), url("../fonts/Exo20-Regular.ttf") format("truetype"), url("../fonts/Exo20-Regular.svg#Exo2.0-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Exo 2.0 Extra';
-  src: url("/fonts/Exo20-ExtraBold.eot");
-  src: url("/fonts/Exo20-ExtraBold.eot?#iefix") format("embedded-opentype"), url("/fonts/Exo20-ExtraBold.woff2") format("woff2"), url("/fonts/Exo20-ExtraBold.woff") format("woff"), url("/fonts/Exo20-ExtraBold.ttf") format("truetype"), url("/fonts/Exo20-ExtraBold.svg#Exo2.0-ExtraBold") format("svg");
+  src: url("../fonts/Exo20-ExtraBold.eot");
+  src: url("../fonts/Exo20-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Exo20-ExtraBold.woff2") format("woff2"), url("../fonts/Exo20-ExtraBold.woff") format("woff"), url("../fonts/Exo20-ExtraBold.ttf") format("truetype"), url("../fonts/Exo20-ExtraBold.svg#Exo2.0-ExtraBold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Proxima Nova Rg';
-  src: url("/fonts/ProximaNova-Bold.eot");
-  src: url("/fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/ProximaNova-Bold.woff2") format("woff2"), url("/fonts/ProximaNova-Bold.woff") format("woff"), url("/fonts/ProximaNova-Bold.ttf") format("truetype"), url("/fonts/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Exo 2.0 Semi';
-  src: url("/fonts/Exo20-SemiBold.eot");
-  src: url("/fonts/Exo20-SemiBold.eot?#iefix") format("embedded-opentype"), url("/fonts/Exo20-SemiBold.woff2") format("woff2"), url("/fonts/Exo20-SemiBold.woff") format("woff"), url("/fonts/Exo20-SemiBold.ttf") format("truetype"), url("/fonts/Exo20-SemiBold.svg#Exo2.0-SemiBold") format("svg");
+  src: url("../fonts/Exo20-SemiBold.eot");
+  src: url("../fonts/Exo20-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Exo20-SemiBold.woff2") format("woff2"), url("../fonts/Exo20-SemiBold.woff") format("woff"), url("../fonts/Exo20-SemiBold.ttf") format("truetype"), url("../fonts/Exo20-SemiBold.svg#Exo2.0-SemiBold") format("svg");
   font-weight: 600;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("/fonts/TTNorms-Bold.eot");
-  src: url("/fonts/TTNorms-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-Bold.woff2") format("woff2"), url("/fonts/TTNorms-Bold.woff") format("woff"), url("/fonts/TTNorms-Bold.ttf") format("truetype"), url("/fonts/TTNorms-Bold.svg#TTNorms-Bold") format("svg");
+  src: url("../fonts/TTNorms-Bold.eot");
+  src: url("../fonts/TTNorms-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Bold.woff2") format("woff2"), url("../fonts/TTNorms-Bold.woff") format("woff"), url("../fonts/TTNorms-Bold.ttf") format("truetype"), url("../fonts/TTNorms-Bold.svg#TTNorms-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Exo 2.0';
-  src: url("/fonts/Exo20-Bold.eot");
-  src: url("/fonts/Exo20-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Exo20-Bold.woff2") format("woff2"), url("/fonts/Exo20-Bold.woff") format("woff"), url("/fonts/Exo20-Bold.ttf") format("truetype"), url("/fonts/Exo20-Bold.svg#Exo2.0-Bold") format("svg");
+  src: url("../fonts/Exo20-Bold.eot");
+  src: url("../fonts/Exo20-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Exo20-Bold.woff2") format("woff2"), url("../fonts/Exo20-Bold.woff") format("woff"), url("../fonts/Exo20-Bold.ttf") format("truetype"), url("../fonts/Exo20-Bold.svg#Exo2.0-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("/fonts/TTNorms-Light.eot");
-  src: url("/fonts/TTNorms-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-Light.woff2") format("woff2"), url("/fonts/TTNorms-Light.woff") format("woff"), url("/fonts/TTNorms-Light.ttf") format("truetype"), url("/fonts/TTNorms-Light.svg#TTNorms-Light") format("svg");
+  src: url("../fonts/TTNorms-Light.eot");
+  src: url("../fonts/TTNorms-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Light.woff2") format("woff2"), url("../fonts/TTNorms-Light.woff") format("woff"), url("../fonts/TTNorms-Light.ttf") format("truetype"), url("../fonts/TTNorms-Light.svg#TTNorms-Light") format("svg");
   font-weight: 300;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("/fonts/TTNorms-Medium.eot");
-  src: url("/fonts/TTNorms-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-Medium.woff2") format("woff2"), url("/fonts/TTNorms-Medium.woff") format("woff"), url("/fonts/TTNorms-Medium.ttf") format("truetype"), url("/fonts/TTNorms-Medium.svg#TTNorms-Medium") format("svg");
+  src: url("../fonts/TTNorms-Medium.eot");
+  src: url("../fonts/TTNorms-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Medium.woff2") format("woff2"), url("../fonts/TTNorms-Medium.woff") format("woff"), url("../fonts/TTNorms-Medium.ttf") format("truetype"), url("../fonts/TTNorms-Medium.svg#TTNorms-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("/fonts/TTNorms-Regular.eot");
-  src: url("/fonts/TTNorms-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-Regular.woff2") format("woff2"), url("/fonts/TTNorms-Regular.woff") format("woff"), url("/fonts/TTNorms-Regular.ttf") format("truetype"), url("/fonts/TTNorms-Regular.svg#TTNorms-Regular") format("svg");
+  src: url("../fonts/TTNorms-Regular.eot");
+  src: url("../fonts/TTNorms-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Regular.woff2") format("woff2"), url("../fonts/TTNorms-Regular.woff") format("woff"), url("../fonts/TTNorms-Regular.ttf") format("truetype"), url("../fonts/TTNorms-Regular.svg#TTNorms-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Idealist Sans';
-  src: url("/fonts/IdealistSans-Light.eot");
-  src: url("/fonts/IdealistSans-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/IdealistSans-Light.woff2") format("woff2"), url("/fonts/IdealistSans-Light.woff") format("woff"), url("/fonts/IdealistSans-Light.ttf") format("truetype"), url("/fonts/IdealistSans-Light.svg#IdealistSans-Light") format("svg");
+  src: url("../fonts/IdealistSans-Light.eot");
+  src: url("../fonts/IdealistSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/IdealistSans-Light.woff2") format("woff2"), url("../fonts/IdealistSans-Light.woff") format("woff"), url("../fonts/IdealistSans-Light.ttf") format("truetype"), url("../fonts/IdealistSans-Light.svg#IdealistSans-Light") format("svg");
   font-weight: 300;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Idealist Sans';
-  src: url("/fonts/IdealistSans.eot");
-  src: url("/fonts/IdealistSans.eot?#iefix") format("embedded-opentype"), url("/fonts/IdealistSans.woff2") format("woff2"), url("/fonts/IdealistSans.woff") format("woff"), url("/fonts/IdealistSans.ttf") format("truetype"), url("/fonts/IdealistSans.svg#IdealistSans") format("svg");
+  src: url("../fonts/IdealistSans.eot");
+  src: url("../fonts/IdealistSans.eot?#iefix") format("embedded-opentype"), url("../fonts/IdealistSans.woff2") format("woff2"), url("../fonts/IdealistSans.woff") format("woff"), url("../fonts/IdealistSans.ttf") format("truetype"), url("../fonts/IdealistSans.svg#IdealistSans") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
@@ -571,7 +571,7 @@ input:-moz-placeholder {
   margin-right: 11px; }
 
 .custom-checkbox:checked + label::before {
-  background: url(/img/check2.png) no-repeat center center;
+  background: url(../img/check2.png) no-repeat center center;
   background-size: 8px; }
 
 .swiper-pagination {
@@ -633,7 +633,7 @@ input:-moz-placeholder {
   content: "";
   position: absolute;
   right: 0px;
-  background: url(/img/down-arrow.png) no-repeat !important;
+  background: url(../img/down-arrow.png) no-repeat !important;
   width: 7px;
   left: inherit;
   height: 5px;
@@ -646,7 +646,7 @@ input:-moz-placeholder {
   content: "";
   position: absolute;
   right: 0px;
-  background: url(/img/down-arrow.png) no-repeat !important;
+  background: url(../img/down-arrow.png) no-repeat !important;
   width: 7px;
   left: inherit;
   height: 5px;
@@ -1423,10 +1423,10 @@ input:-moz-placeholder {
       border-radius: 4px;
       background: white; }
 
-.tab-content, .tab-content61 {
+.tab-content, .tab-content61, .tab-content55 {
   display: none; }
 
-.tab-content.active {
+.tab-content.active, .tab-content55.active {
   display: block; }
 
 .sub-tab-content, .sub-tab-content2, .sub-tab-content3, .sub-tab-content4, .sub-tab-content5, .sub-tab-content6, .sub-tab-content7, .sub-tab-content8, .sub-tab-content9 {
@@ -1453,6 +1453,7 @@ input:-moz-placeholder {
   .cat__fig {
     position: absolute;
     right: 0;
+    height: 97%;
     bottom: 0; }
   .cat__title {
     font-size: 36px;
@@ -1474,19 +1475,19 @@ input:-moz-placeholder {
     position: relative;
     z-index: 3;
     margin-bottom: 21px; }
-    .cat__row .tab-btn {
+    .cat__row .tab-btn55 {
       align-items: center;
       cursor: pointer;
       display: flex;
       margin-right: 20px; }
-      .cat__row .tab-btn p {
+      .cat__row .tab-btn55 p {
         margin-left: 9px;
         color: white;
         font-family: Idealist Sans;
         font-size: 12px;
         font-weight: 400;
         transition: 0.5s; }
-      .cat__row .tab-btn:hover p {
+      .cat__row .tab-btn55:hover p {
         color: black; }
     .cat__row a {
       display: flex;
@@ -1929,7 +1930,7 @@ input:-moz-placeholder {
     line-height: 110%;
     letter-spacing: 0.3px; }
   .calc .custom-checkbox:checked + label::before {
-    background: url(/img/check6.svg) no-repeat center center;
+    background: url(../img/check6.svg) no-repeat center center;
     background-size: inherit; }
   .calc__buttons {
     align-items: center;
@@ -2273,6 +2274,8 @@ input:-moz-placeholder {
     left: -15%;
     object-fit: initial !important;
     top: -47%; }
+  .we__map {
+    border: 1px solid #000; }
   .we img {
     width: 100%;
     border-radius: 15px;
@@ -2461,7 +2464,7 @@ input:-moz-placeholder {
     .faq .accordeon__button:hover {
       color: #3FA52E; }
     .faq .accordeon__button:after {
-      background: url(/img/plus.svg) no-repeat !important;
+      background: url(../img/plus.svg) no-repeat !important;
       width: 30px;
       right: inherit;
       top: 12px;
@@ -2470,7 +2473,7 @@ input:-moz-placeholder {
   .faq .accordeon__button.active {
     color: #3FA52E; }
     .faq .accordeon__button.active:after {
-      background: url(/img/minus.svg) no-repeat !important;
+      background: url(../img/minus.svg) no-repeat !important;
       width: 30px;
       right: inherit;
       left: 27px;
@@ -2529,7 +2532,9 @@ input:-moz-placeholder {
   padding: 111px 0 50px;
   position: relative; }
   .call h2 {
-    margin-bottom: 26px; }
+    position: relative;
+    margin-bottom: 26px;
+    z-index: 2; }
   .call .tree {
     left: 0;
     top: 0; }
@@ -2585,7 +2590,9 @@ input:-moz-placeholder {
     font-weight: 600;
     line-height: 26px;
     text-align: center;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2; }
   .call__title {
     color: #107db1;
     font-family: 'Exo 2.0';
@@ -3274,7 +3281,150 @@ input.error {
   .calc__text {
     font-size: 18px; }
   .calc__num {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .popup__pic, .popup__pic2 {
+    display: none; }
+  .popup {
+    width: 80%; }
+  .popup__bg.active, .popup__bg2.active {
+    z-index: 2000; }
+  .popup form input {
+    width: 50%; } }
+
+@media screen and (max-width: 767px) {
+  .links {
+    right: 0;
+    top: inherit;
+    bottom: 5px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between; }
+  .links__info {
+    display: none !important; }
+  .links a {
+    width: 49%;
+    height: 43px;
+    justify-content: center;
+    margin-bottom: 0 !important; }
+    .links a br {
+      display: none; }
+  .header__row {
+    margin-top: 40px;
+    flex-direction: column; }
+  .header__item {
+    margin-right: 0;
+    margin-bottom: 30px; }
+  .header {
+    padding-bottom: 30px; }
+  .van__top {
+    flex-direction: column;
+    align-items: center; }
+  .van__top p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 120%;
+    width: 80%;
+    margin: 10px auto 0; }
+  .van__text {
+    font-size: 14px; }
+  .van__item {
+    padding: 30px 20px;
+    width: 48.4%; }
+  h2 {
+    font-size: 28px; }
+  .cat__title {
+    line-height: 106%;
+    font-size: 28px; }
+  .cat__text {
+    font-size: 16px; }
+  .present__item {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 30px 20px; }
+  .exist__pic {
+    width: 100%;
+    height: auto; }
+  .exist__content {
+    margin-top: 20px;
+    max-width: 100%; }
+  .exist-area {
+    padding: 30px 20px; }
+  .exist-area h3 {
+    font-size: 28px; }
+  .exist-area__pic {
+    display: none; }
+  .exist-area form input {
+    width: 45%; }
+  .calc .calc__five input {
+    width: 100%;
+    margin-right: 0; }
+  .area__item p {
+    font-size: 12px; }
+  .area__item p span {
+    font-size: 30px; }
+  .area__item img {
+    max-height: 40px; }
+  .van2 .van__item {
+    padding: 30px 20px; }
+  .van2 .van__top p {
+    font-size: 17px;
+    line-height: 120%; }
+  .sales {
+    padding: 20px 0 40px; }
+  .sales .swiper2 .swiper-slide {
+    height: auto; }
+  .sales .swiper2 .swiper-slide a {
+    margin-top: 25px; }
+  .pay__item {
+    flex-direction: column;
+    align-items: center; }
+  .pay__item p {
+    margin-left: 0;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 10px; }
+  .pay__item img {
+    max-width: 42px; }
+  .pay__title {
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center; }
+  .pay__item p span {
+    font-size: 14px; }
+  .pay__row {
+    justify-content: space-around; }
+  .pay__btn {
+    margin: 25px auto 0; }
+  .stage__item {
+    padding: 30px 20px; }
+  .key__text {
+    font-size: 18px; }
+  .faq .accordeon__button {
+    height: auto;
+    padding: 10px 40px 10px 80px; }
+  .faq .accordeon__button:after {
+    top: 50%;
+    margin-top: -13px; }
+  .faq .accordeon__button.active:after {
+    top: 0;
+    margin-top: -9px; }
+  .call__area {
+    line-height: 110%; }
+  .call__form {
+    flex-direction: column; }
+  .call__form input {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%; }
+  .call__form button {
+    width: 100%; }
+  .rev .sale__arr {
+    left: -27px; }
+  .rev .swiper-button-next9 {
+    right: -27px;
+    left: inherit; }
+  .ser {
+    padding: 20px 0 40px; } }
 
 @media screen and (max-width: 576px) {
   button:active, button:focus {
@@ -3296,4 +3446,362 @@ input.error {
     .mm li {
       margin-bottom: 40px !important;
       width: 100% !important;
-      margin-top: 0 !important; } }
+      margin-top: 0 !important; }
+  .nav {
+    padding: 20px 0; }
+  .nav__logo {
+    width: 150px; }
+    .nav__logo img {
+      width: 100%;
+      object-fit: contain; }
+  .menu-btn, .menu-btn.active {
+    right: 0;
+    top: 22px; }
+  .menu {
+    padding: 60px 20px; }
+    .menu .nav__socials {
+      margin-left: 0;
+      margin-top: 20px;
+      justify-content: flex-start; }
+    .menu .nav__content {
+      margin-left: 0; }
+  .menu .nav__info {
+    flex-direction: column; }
+  .links a {
+    padding-left: 0; }
+    .links a p {
+      margin-left: 4px;
+      font-size: 12px;
+      line-height: 12px; }
+    .links a .svg {
+      width: 25px; }
+  .header__box {
+    margin-top: 30px; }
+  .header__info h1 {
+    margin-bottom: 20px;
+    font-size: 28px; }
+  .header__pic {
+    right: -64px;
+    top: -41px;
+    width: 140%; }
+  .header__info p {
+    font-size: 18px; }
+  .header__btn {
+    width: 100%; }
+  .header__link {
+    width: 100%; }
+  .header__area {
+    width: 48%; }
+  .header__flex {
+    left: 0;
+    margin-top: 20px; }
+  h2 {
+    font-size: 24px;
+    margin-bottom: 30px; }
+  .van {
+    padding: 20px 0; }
+  .van__box {
+    margin-top: 30px; }
+  .van__item {
+    width: 100%; }
+  .info {
+    padding: 33px 0; }
+  .sale .swiper1 .swiper-wrapper .swiper-slide:nth-child(2) {
+    top: -4px; }
+  .sale__arr {
+    top: 157px;
+    left: -10px; }
+  .sale {
+    padding: 40px 0 20px; }
+    .sale .swiper-button-next1 {
+      right: -10px; }
+  .sale__box .tabs__nav {
+    max-width: 100%; }
+  .sale__pic {
+    width: 100%; }
+  .sale__row {
+    flex-direction: column;
+    margin-top: -40px; }
+  .sale__row div:first-child {
+    margin-bottom: 10px; }
+  .sale__flex {
+    flex-direction: column; }
+  .sale__info {
+    margin-top: 10px; }
+  .sale__text {
+    font-size: 14px;
+    text-align: center;
+    line-height: 100%; }
+  .sale__bottom {
+    margin-top: 15px;
+    text-align: center;
+    flex-direction: column; }
+  .sale__btn {
+    width: 100%;
+    margin-bottom: 15px; }
+  .sale__content h3 {
+    font-size: 21px;
+    text-align: center;
+    line-height: 110%;
+    margin-bottom: 30px; }
+  .sale__el {
+    flex-direction: column; }
+  .sale__char div {
+    margin-left: 0;
+    margin-top: 0px; }
+  .sale__char {
+    margin-top: 10px; }
+  .sale__content {
+    padding: 30px 20px; }
+  .cat__box {
+    padding: 30px 20px; }
+  .cat__title {
+    margin-bottom: 20px; }
+  .cat__text {
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    text-decoration: underline;
+    margin-bottom: 20px; }
+  .cat__row .tab-btn55 img, .cat__row a img {
+    width: 40px; }
+  .cat__row {
+    flex-direction: column;
+    align-items: flex-start; }
+  .cat__row .tab-btn55 {
+    margin-right: 0;
+    margin-bottom: 10px; }
+  .cat__form {
+    flex-direction: column; }
+  .cat__form input {
+    margin-right: 0;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 10px; }
+  .cat__form button {
+    width: 100%; }
+  .cat__area {
+    margin-top: 15px; }
+  .present {
+    padding: 20px 0 30px; }
+  .present__box {
+    margin-top: 20px; }
+  .present__item a {
+    width: 100%; }
+  .exist {
+    padding: 20px 0 30px; }
+  .exist__name {
+    font-size: 24px;
+    line-height: 110%;
+    margin-bottom: 20px; }
+  .exist__text {
+    font-size: 18px; }
+  .exist-area h3 {
+    font-size: 23px;
+    margin-bottom: 15px; }
+  .exist-area__list li {
+    width: 100%; }
+  .exist-area__list {
+    margin-bottom: 15px; }
+  .exist-area__text {
+    margin-bottom: 20px; }
+  .exist-area form input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px; }
+  .exist-area form button {
+    margin-top: 0px;
+    font-size: 14px; }
+  .rate {
+    padding: 30px 0; }
+  .calc {
+    padding: 30px 0; }
+  .calc__text {
+    font-size: 16px; }
+  .calc__name {
+    font-size: 18px; }
+  .calc .custom-checkbox + label {
+    font-size: 14px; }
+  .calc__item {
+    width: 100%; }
+  .calc__btn {
+    width: 100%; }
+  .calc__buttons {
+    flex-direction: column-reverse; }
+  .calc__prev {
+    top: 0;
+    margin-top: 20px; }
+  .calc .calc__five input {
+    margin-bottom: 10px; }
+  .area__row {
+    flex-wrap: wrap; }
+  .area__item {
+    width: 48%;
+    margin-bottom: 30px; }
+  .area__item p {
+    margin: 0 auto !important; }
+  .area__item img {
+    left: 0;
+    top: -10px; }
+  .area__item:first-child img {
+    left: 7px; }
+  .area__item:nth-child(2) img {
+    left: 5px; }
+  .van2 .van__item {
+    margin-bottom: 15px; }
+  .sales .sale__arr {
+    left: -13px; }
+  .sales .swiper-button-next2 {
+    right: -13px;
+    left: inherit; }
+  .sales .swiper2 .swiper-slide a {
+    width: 100%; }
+  .pay__block {
+    padding: 30px 20px; }
+  .pay__title {
+    font-size: 21px; }
+  .pay__row {
+    justify-content: space-between; }
+  .stage {
+    padding: 30px 0; }
+  .stage__item {
+    width: 100%;
+    margin-bottom: 15px; }
+  .stage__item h3 {
+    min-height: auto; }
+  .key {
+    padding: 30px 0; }
+  .key__box img {
+    height: auto; }
+  .key__content h2 {
+    margin-bottom: 20px; }
+  .key__flex {
+    margin-top: 20px;
+    flex-direction: column; }
+  .key__btn {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px; }
+  .case {
+    padding: 30px 0; }
+  .case .swiper3 .swiper4, .case .swiper3 .swiper444, .case .swiper3 .swiper4444, .case .swiper3 .swiper44 {
+    height: 220px; }
+  .case .sale__arr {
+    top: 152px; }
+  .case__content p {
+    font-size: 20px;
+    line-height: 110%;
+    margin-bottom: 20px; }
+  .case__content a {
+    width: 100%; }
+  .we {
+    padding: 30px 0; }
+  .we h2 {
+    margin-bottom: 20px; }
+  .we img {
+    height: 240px; }
+  .team {
+    padding-bottom: 30px; }
+  .team h2 {
+    margin-bottom: 20px; }
+  .team__sub {
+    font-size: 18px;
+    margin-bottom: 20px; }
+  .team__tabs button {
+    font-size: 21px; }
+  .team__name {
+    font-size: 18px; }
+  .team__info {
+    font-size: 14px;
+    line-height: 110%; }
+  .team__years {
+    font-size: 14px; }
+  .team__item {
+    padding: 20px 10px; }
+  .faq .panel__text, .faq .panel__text2 {
+    padding-left: 20px; }
+  .call h2 {
+    margin-bottom: 20px; }
+  .call__content {
+    margin-top: 20px; }
+  .call__one {
+    margin-bottom: 20px; }
+  .call__info img {
+    width: 100%;
+    margin-bottom: 20px; }
+  .rev__yan {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin: 0 auto 20px;
+    display: block; }
+  .rev .sale__arr {
+    top: 200px; }
+  .rev__text {
+    margin-bottom: 20px; }
+  .rev .sale__arr {
+    left: -15px; }
+  .rev .swiper-button-next9 {
+    right: -15px;
+    left: inherit; }
+  .rev__name, .rev__sub, .rev__flex p, .rev__text, .rev .swiper9 a {
+    font-size: 17px; }
+  .more {
+    padding: 30px 0; }
+  .more h2 {
+    margin-bottom: 25px; }
+  .more__item {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 20px;
+    height: auto; }
+  .ser .swiper10 {
+    height: 200px; }
+  .ser .sale__arr {
+    left: 5px; }
+  .ser .swiper-button-next10 {
+    right: 5px;
+    left: inherit; }
+  .footer__flex {
+    flex-direction: column; }
+  .footer__logo {
+    margin-bottom: 30px; }
+  .footer .nav__tel:first-child {
+    margin-right: 0;
+    margin-bottom: 20px; }
+  .footer #map {
+    height: 250px; }
+  .popup {
+    width: 90%;
+    padding: 20px; }
+  .popup__title {
+    font-size: 24px;
+    margin-bottom: 15px; }
+  .popup__text {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 110%; }
+    .popup__text br {
+      display: none; }
+  .popup__flex {
+    flex-direction: column;
+    margin-bottom: 0; }
+  .popup form input {
+    width: 100%;
+    margin-bottom: 10px; }
+  .popup form input:first-child {
+    margin-right: 0; }
+  .popup__row {
+    flex-direction: column; }
+  .popup__row button {
+    width: 100%;
+    margin-bottom: 10px; }
+  .popup__row p {
+    margin-left: 0; }
+  .van__text {
+    text-align: center; }
+  .exist__btn {
+    width: 100%;
+    text-align: center; }
+  .ser .sale__arr {
+    top: 140px; } }

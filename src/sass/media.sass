@@ -486,7 +486,149 @@
       font-size: 18px
    .calc__num
       font-size: 30px
-// @media screen and (max-width: 767px)
+   .popup__pic, .popup__pic2 
+      display: none
+   .popup
+      width: 80%
+   .popup__bg.active, .popup__bg2.active
+      z-index: 2000
+   .popup form input
+      width: 50%
+@media screen and (max-width: 767px)
+   .links 
+      right: 0
+      top: inherit
+      bottom: 5px
+      display: flex
+      width: 100%
+      justify-content: space-between
+   .links__info
+      display: none !important
+   .links a
+      width: 49%
+      height: 43px
+      justify-content: center
+      margin-bottom: 0 !important
+      br 
+         display: none
+   .header__row
+      margin-top: 40px
+      flex-direction: column
+   .header__item
+      margin-right: 0
+      margin-bottom: 30px
+   .header
+      padding-bottom: 30px
+   .van__top
+      flex-direction: column 
+      align-items: center
+   .van__top p
+      text-align: center
+      font-size: 18px
+      line-height: 120%
+      width: 80%
+      margin: 10px auto 0
+   .van__text
+      font-size: 14px
+   .van__item
+      padding: 30px 20px
+      width: 48.4%
+   h2 
+      font-size: 28px
+   .cat__title
+      line-height: 106% 
+      font-size: 28px
+   .cat__text
+      font-size: 16px
+   .present__item
+      width: 100%
+      margin-bottom: 10px
+      padding: 30px 20px
+   .exist__pic
+      width: 100%
+      height: auto
+   .exist__content
+      margin-top: 20px
+      max-width: 100%
+   .exist-area
+      padding: 30px 20px
+   .exist-area h3
+      font-size: 28px
+   .exist-area__pic
+      display: none
+   .exist-area form input
+      width: 45%
+   .calc .calc__five input
+      width: 100%
+      margin-right: 0
+   .area__item p
+      font-size: 12px
+   .area__item p span
+      font-size: 30px
+   .area__item img
+      max-height: 40px
+   .van2 .van__item
+      padding: 30px 20px
+   .van2 .van__top p
+      font-size: 17px
+      line-height: 120%
+   .sales
+      padding: 20px 0 40px
+   .sales .swiper2 .swiper-slide
+      height: auto
+   .sales .swiper2 .swiper-slide a
+      margin-top: 25px
+   .pay__item
+      flex-direction: column 
+      align-items: center
+   .pay__item p
+      margin-left: 0 
+      font-size: 26px
+      text-align: center
+      margin-top: 10px
+   .pay__item img
+      max-width: 42px
+   .pay__title
+      font-size: 24px
+      line-height: 120%
+      text-align: center
+   .pay__item p span
+      font-size: 14px
+   .pay__row
+      justify-content: space-around
+   .pay__btn
+      margin: 25px auto 0
+   .stage__item
+      padding: 30px 20px
+   .key__text
+      font-size: 18px
+   .faq .accordeon__button
+      height: auto
+      padding: 10px 40px 10px 80px
+   .faq .accordeon__button:after
+      top: 50%
+      margin-top: -13px
+   .faq .accordeon__button.active:after
+      top: 0
+      margin-top: -9px
+   .call__area
+      line-height: 110%
+   .call__form
+      flex-direction: column
+   .call__form input
+      margin-right: 0
+      margin-bottom: 10px
+      width: 100%
+   .call__form button
+      width: 100%
+   .rev 
+      .sale__arr
+         left: -27px
+      .swiper-button-next9
+         right: -27px
+         left: inherit
+   .ser
+      padding: 20px 0 40px
 @media screen and (max-width: 576px)
    button:active, button:focus 
       outline: none
@@ -508,3 +650,368 @@
          margin-bottom: 40px !important
          width: 100% !important
          margin-top: 0 !important
+   .nav
+      padding: 20px 0
+   .nav__logo 
+      width: 150px
+      img 
+         width: 100%
+         object-fit: contain
+   .menu-btn, .menu-btn.active
+      right: 0
+      top: 22px
+   .menu
+      padding: 60px 20px
+      .nav__socials
+         margin-left: 0
+         margin-top: 20px
+         justify-content: flex-start
+      .nav__content
+         margin-left: 0
+   .menu .nav__info
+      flex-direction: column
+   .links a
+      padding-left: 0
+      p 
+         margin-left: 4px
+         font-size: 12px
+         line-height: 12px
+      .svg 
+         width: 25px
+   .header__box
+      margin-top: 30px
+   .header__info h1 
+      margin-bottom: 20px
+      font-size: 28px
+   .header__pic 
+      right: -64px
+      top: -41px
+      width: 140%
+   .header__info p
+      font-size: 18px
+   .header__btn
+      width: 100%
+   .header__link
+      width: 100%
+   .header__area
+      width: 48%
+   .header__flex
+      left: 0
+      margin-top: 20px
+   h2 
+      font-size: 24px
+      margin-bottom: 30px
+   .van
+      padding: 20px 0
+   .van__box
+      margin-top: 30px
+   .van__item
+      width: 100%
+   .info
+      padding: 33px 0
+   .sale .swiper1 .swiper-wrapper .swiper-slide:nth-child(2)
+      top: -4px
+   .sale__arr
+      top: 157px
+      left: -10px
+   .sale 
+      padding: 40px 0 20px
+      .swiper-button-next1
+         right: -10px
+   .sale__box .tabs__nav
+      max-width: 100%
+   .sale__pic
+      width: 100%
+   .sale__row
+      flex-direction: column
+      margin-top: -40px
+   .sale__row div:first-child
+      margin-bottom: 10px
+   .sale__flex
+      flex-direction: column
+   .sale__info
+      margin-top: 10px
+   .sale__text
+      font-size: 14px
+      text-align: center
+      line-height: 100%
+   .sale__bottom
+      margin-top: 15px
+      text-align: center
+      flex-direction: column
+   .sale__btn
+      width: 100%
+      margin-bottom: 15px
+   .sale__content h3
+      font-size: 21px
+      text-align: center
+      line-height: 110%
+      margin-bottom: 30px
+   .sale__el
+      flex-direction: column
+   .sale__char div
+      margin-left: 0
+      margin-top: 0px
+   .sale__char
+      margin-top: 10px
+   .sale__content
+      padding: 30px 20px
+   .cat__box
+      padding: 30px 20px
+   .cat__title
+      margin-bottom: 20px
+   .cat__text 
+      font-size: 14px
+      width: 100%
+      border: none
+      text-decoration: underline
+      margin-bottom: 20px
+   .cat__row .tab-btn55, .cat__row a
+      img
+         width: 40px
+   .cat__row
+      flex-direction: column
+      align-items: flex-start
+   .cat__row .tab-btn55
+      margin-right: 0
+      margin-bottom: 10px
+   .cat__form
+      flex-direction: column
+   .cat__form input
+      margin-right: 0
+      max-width: 100%
+      width: 100%
+      margin-bottom: 10px
+   .cat__form button
+      width: 100%
+   .cat__area
+      margin-top: 15px
+   .present
+      padding: 20px 0 30px
+   .present__box
+      margin-top: 20px
+   .present__item a
+      width: 100%
+   .exist
+      padding: 20px 0 30px
+   .exist__name
+      font-size: 24px
+      line-height: 110%
+      margin-bottom: 20px
+   .exist__text
+      font-size: 18px
+   .exist-area h3
+      font-size: 23px
+      margin-bottom: 15px
+   .exist-area__list li
+      width: 100%
+   .exist-area__list
+      margin-bottom: 15px
+   .exist-area__text
+      margin-bottom: 20px
+   .exist-area form input
+      width: 100%
+      margin-right: 0
+      margin-bottom: 10px
+   .exist-area form button
+      margin-top: 0px
+      font-size: 14px
+   .rate
+      padding: 30px 0
+   .calc
+      padding: 30px 0
+   .calc__text
+      font-size: 16px
+   .calc__name
+      font-size: 18px
+   .calc .custom-checkbox + label
+      font-size: 14px
+   .calc__item
+      width: 100%
+   .calc__btn
+      width: 100%
+   .calc__buttons
+      flex-direction: column-reverse
+   .calc__prev
+      top: 0
+      margin-top: 20px
+   .calc .calc__five input
+      margin-bottom: 10px
+   .area__row
+      flex-wrap: wrap
+   .area__item
+      width: 48%
+      margin-bottom: 30px
+   .area__item p
+      margin: 0 auto !important
+   .area__item img
+      left: 0
+      top: -10px
+   .area__item:first-child img
+      left: 7px
+   .area__item
+      &:nth-child(2)
+         img
+            left: 5px
+   .van2 .van__item
+      margin-bottom: 15px
+   .sales
+      .sale__arr
+         left: -13px
+      .swiper-button-next2
+         right: -13px
+         left: inherit
+   .sales .swiper2 .swiper-slide a
+      width: 100%
+   .pay__block
+      padding: 30px 20px
+   .pay__title
+      font-size: 21px
+   .pay__row
+      justify-content: space-between
+   .stage
+      padding: 30px 0
+   .stage__item
+      width: 100%
+      margin-bottom: 15px
+   .stage__item h3
+      min-height: auto
+   .key
+      padding: 30px 0
+   .key__box img
+      height: auto
+   .key__content h2
+      margin-bottom: 20px
+   .key__flex
+      margin-top: 20px
+      flex-direction: column
+   .key__btn
+      width: 100%
+      margin-right: 0
+      margin-bottom: 10px  
+   .case
+      padding: 30px 0
+   .case .swiper3 .swiper4, .case .swiper3 .swiper444, .case .swiper3 .swiper4444, .case .swiper3 .swiper44
+      height: 220px
+   .case .sale__arr
+      top: 152px
+   .case__content p
+      font-size: 20px
+      line-height: 110%
+      margin-bottom: 20px
+   .case__content a
+      width: 100%
+   .we
+      padding: 30px 0
+   .we h2
+      margin-bottom: 20px
+   .we img
+      height: 240px
+   .team
+      padding-bottom: 30px
+   .team h2
+      margin-bottom: 20px
+   .team__sub
+      font-size: 18px
+      margin-bottom: 20px
+   .team__tabs button
+      font-size: 21px
+   .team__name
+      font-size: 18px
+   .team__info
+      font-size: 14px
+      line-height: 110%
+   .team__years
+      font-size: 14px
+   .team__item
+      padding: 20px 10px
+   .faq .panel__text, .faq .panel__text2
+      padding-left: 20px
+   .call h2
+      margin-bottom: 20px
+   .call__content
+      margin-top: 20px
+   .call__one
+      margin-bottom: 20px
+   .call__info img
+      width: 100%
+      margin-bottom: 20px
+   .rev__yan 
+      position: relative
+      right: 0
+      top: 0
+      margin: 0 auto 20px
+      display: block
+   .rev .sale__arr
+      top: 200px
+   .rev__text
+      margin-bottom: 20px
+   .rev
+      .sale__arr
+         left: -15px
+      .swiper-button-next9
+         right: -15px
+         left: inherit
+   .rev__name, .rev__sub, .rev__flex p, .rev__text, .rev .swiper9 a
+      font-size: 17px
+   .more
+      padding: 30px 0
+   .more h2
+      margin-bottom: 25px
+   .more__item
+      width: 100%
+      margin-bottom: 15px
+      padding: 20px
+      height: auto
+   .ser .swiper10
+      height: 200px
+   .ser
+      .sale__arr
+         left: 5px
+      .swiper-button-next10
+         right: 5px
+         left: inherit
+   .footer__flex
+      flex-direction: column
+   .footer__logo
+      margin-bottom: 30px
+   .footer .nav__tel:first-child
+      margin-right: 0
+      margin-bottom: 20px
+   .footer #map
+      height: 250px
+   .popup
+      width: 90%
+      padding: 20px
+   .popup__title
+      font-size: 24px
+      margin-bottom: 15px
+   .popup__text
+      font-size: 14px
+      margin-bottom: 20px
+      line-height: 110%
+      br
+         display: none
+   .popup__flex
+      flex-direction: column
+      margin-bottom: 0
+   .popup form input
+      width: 100%
+      margin-bottom: 10px
+   .popup form input:first-child
+      margin-right: 0
+   .popup__row
+      flex-direction: column
+   .popup__row button
+      width: 100%
+      margin-bottom: 10px
+   .popup__row p
+      margin-left: 0
+   .van__text
+      text-align: center
+   .exist__btn
+      width: 100%
+      text-align: center
+   .ser .sale__arr
+      top: 140px
+

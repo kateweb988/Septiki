@@ -266,9 +266,12 @@ document.addEventListener('DOMContentLoaded', function () {
     breakpoints: {
       // when window width is >= 320px
       320: {
-        spaceBetween: 0,
-        loop: true,
-        slidesPerView: 1
+        spaceBetween: 20,
+        slidesPerView: 2
+      },
+      526: {
+        spaceBetween: 20,
+        slidesPerView: 3
       },
       767: {
         spaceBetween: 20,
@@ -378,9 +381,9 @@ document.addEventListener('DOMContentLoaded', function () {
     breakpoints: {
       // when window width is >= 320px
       320: {
-        spaceBetween: 0,
+        spaceBetween: 10,
         loop: true,
-        slidesPerView: 1
+        slidesPerView: 2
       },
       767: {
         spaceBetween: 10,
@@ -678,6 +681,44 @@ document.addEventListener("DOMContentLoaded", () => {
   const subTabs = document.querySelectorAll('.sub-tab-btn61');
   const tabContents = document.querySelectorAll('.tab-content61');
   const subTabContents = document.querySelectorAll('.sub-tab-content');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const tabData = tab.getAttribute('data-tab');
+      tabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.getAttribute('id') === tabData) {
+          content.classList.add('active');
+        }
+      });
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+      });
+      tab.classList.add('active');
+    });
+  });
+
+  subTabs.forEach(subTab => {
+    subTab.addEventListener('click', () => {
+      const subTabData = subTab.getAttribute('data-tab');
+      subTabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.getAttribute('id') === subTabData) {
+          content.classList.add('active');
+        }
+      });
+      subTabs.forEach(subTab => {
+        subTab.classList.remove('active');
+      });
+      subTab.classList.add('active');
+    });
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll('.tab-btn55');
+  const subTabs = document.querySelectorAll('.sub-tab-btn55');
+  const tabContents = document.querySelectorAll('.tab-content55');
+  const subTabContents = document.querySelectorAll('.sub-tab-content55');
 
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
