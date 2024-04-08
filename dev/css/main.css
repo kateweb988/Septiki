@@ -397,11 +397,11 @@ html *::-webkit-scrollbar-thumb {
 
 .close-popup {
   position: absolute;
-  top: 0;
-  right: 20px;
+  top: 12px;
+  right: 15px;
   cursor: pointer;
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 19px;
   fill: white;
   z-index: 20; }
   .close-popup:hover {
@@ -2448,6 +2448,9 @@ input:-moz-placeholder {
     z-index: 0;
     top: 0;
     left: 0; }
+  .faq .accordeon__item:first-child .accordeon__panel {
+    max-height: inherit;
+    transition: 0.5s; }
   .faq .accordeon__button {
     width: 100%;
     display: flex;
@@ -2744,7 +2747,7 @@ input:-moz-placeholder {
   .ser .container {
     position: relative; }
   .ser .sale__arr {
-    top: 185px; }
+    top: 213px; }
 
 .footer {
   position: relative;
@@ -3289,7 +3292,9 @@ input.error {
   .popup__bg.active, .popup__bg2.active {
     z-index: 2000; }
   .popup form input {
-    width: 50%; } }
+    width: 50%; }
+  .close-popup path {
+    stroke: black; } }
 
 @media screen and (max-width: 767px) {
   .links {
@@ -3455,8 +3460,10 @@ input.error {
       width: 100%;
       object-fit: contain; }
   .menu-btn, .menu-btn.active {
-    right: 0;
+    right: 10px;
     top: 22px; }
+  .van__item:nth-child(5) .van__top p {
+    margin-left: auto; }
   .menu {
     padding: 60px 20px; }
     .menu .nav__socials {
@@ -3489,7 +3496,9 @@ input.error {
   .header__btn {
     width: 100%; }
   .header__link {
-    width: 100%; }
+    width: 100%;
+    justify-content: center;
+    padding-left: 0; }
   .header__area {
     width: 48%; }
   .header__flex {
@@ -3582,6 +3591,16 @@ input.error {
     width: 100%; }
   .cat__area {
     margin-top: 15px; }
+    .cat__area br {
+      display: none; }
+  .exist-area__info br, .call__sub br {
+    display: none; }
+  .team__tabs {
+    max-width: 100%; }
+  .call__content ul li {
+    align-items: flex-start; }
+    .call__content ul li::before {
+      margin-top: 9px; }
   .present {
     padding: 20px 0 30px; }
   .present__box {
@@ -3611,7 +3630,8 @@ input.error {
     margin-bottom: 10px; }
   .exist-area form button {
     margin-top: 0px;
-    font-size: 14px; }
+    font-size: 14px;
+    width: 100%; }
   .rate {
     padding: 30px 0; }
   .calc {
@@ -3736,13 +3756,13 @@ input.error {
     margin: 0 auto 20px;
     display: block; }
   .rev .sale__arr {
-    top: 200px; }
+    top: 190px; }
   .rev__text {
     margin-bottom: 20px; }
   .rev .sale__arr {
-    left: -15px; }
+    left: -10px; }
   .rev .swiper-button-next9 {
-    right: -15px;
+    right: -10px;
     left: inherit; }
   .rev__name, .rev__sub, .rev__flex p, .rev__text, .rev .swiper9 a {
     font-size: 17px; }
@@ -3804,4 +3824,35 @@ input.error {
     width: 100%;
     text-align: center; }
   .ser .sale__arr {
-    top: 140px; } }
+    top: 140px; }
+  .nav .nav__info {
+    display: block; }
+  .nav .nav__content p, .nav .nav__socials, .nav .nav__tel p {
+    display: none; }
+  .nav .nav__tel a {
+    font-size: 14px;
+    margin-right: 62px; }
+  .menu .nav__info, .menu .nav__socials {
+    display: flex; }
+  .menu .nav__content p {
+    display: none; }
+  .menu .nav__tel a {
+    display: block;
+    margin: 20px 0;
+    font-size: 18px; }
+  .close-popup {
+    top: 12px;
+    right: 10px;
+    width: 16px;
+    height: 19px; }
+  .popup__row p {
+    max-width: 100%; } }
+
+@media screen and (max-width: 375px) {
+  .nav__logo {
+    width: 110px; }
+  .nav .nav__tel a {
+    font-size: 12px;
+    margin-right: 59px; }
+  .nav {
+    padding: 23px 0; } }

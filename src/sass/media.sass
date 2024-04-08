@@ -494,6 +494,9 @@
       z-index: 2000
    .popup form input
       width: 50%
+   .close-popup
+      path 
+         stroke: black
 @media screen and (max-width: 767px)
    .links 
       right: 0
@@ -658,8 +661,10 @@
          width: 100%
          object-fit: contain
    .menu-btn, .menu-btn.active
-      right: 0
+      right: 10px
       top: 22px
+   .van__item:nth-child(5) .van__top p
+      margin-left: auto
    .menu
       padding: 60px 20px
       .nav__socials
@@ -693,6 +698,8 @@
       width: 100%
    .header__link
       width: 100%
+      justify-content: center
+      padding-left: 0
    .header__area
       width: 48%
    .header__flex
@@ -786,6 +793,17 @@
       width: 100%
    .cat__area
       margin-top: 15px
+      br 
+         display: none
+   .exist-area__info, .call__sub
+      br 
+         display: none
+   .team__tabs
+      max-width: 100%
+   .call__content ul li
+      align-items: flex-start
+      &::before
+         margin-top: 9px
    .present
       padding: 20px 0 30px
    .present__box
@@ -816,6 +834,7 @@
    .exist-area form button
       margin-top: 0px
       font-size: 14px
+      width: 100%
    .rate
       padding: 30px 0
    .calc
@@ -943,14 +962,14 @@
       margin: 0 auto 20px
       display: block
    .rev .sale__arr
-      top: 200px
+      top: 190px
    .rev__text
       margin-bottom: 20px
    .rev
       .sale__arr
-         left: -15px
+         left: -10px
       .swiper-button-next9
-         right: -15px
+         right: -10px
          left: inherit
    .rev__name, .rev__sub, .rev__flex p, .rev__text, .rev .swiper9 a
       font-size: 17px
@@ -1014,4 +1033,35 @@
       text-align: center
    .ser .sale__arr
       top: 140px
-
+   .nav 
+      .nav__info
+         display: block
+      .nav__content p, .nav__socials, .nav__tel p
+         display: none
+      .nav__tel a
+         font-size: 14px
+         margin-right: 62px
+   .menu
+      .nav__info, .nav__socials
+         display: flex
+      .nav__content p
+         display: none
+      .nav__tel a
+         display: block
+         margin: 20px 0
+         font-size: 18px
+   .close-popup 
+      top: 12px
+      right: 10px
+      width: 16px
+      height: 19px
+   .popup__row p
+      max-width: 100%
+@media screen and (max-width: 375px)
+   .nav__logo
+      width: 110px
+   .nav .nav__tel a 
+      font-size: 12px
+      margin-right: 59px
+   .nav
+      padding: 23px 0

@@ -1,10 +1,10 @@
 .close-popup
    position: absolute
-   top: 0
-   right: 20px
+   top: 12px
+   right: 15px
    cursor: pointer
-   width: 12px
-   height: 12px
+   width: 20px
+   height: 19px
    fill: white
    z-index: 20
    &:hover 
@@ -2023,6 +2023,10 @@ input:-moz-placeholder
       z-index: 0
       top: 0
       left: 0
+   .accordeon__item:first-child
+      .accordeon__panel 
+         max-height: inherit
+         transition: 0.5s
    .accordeon__button
       width: 100%
       display: flex
@@ -2315,7 +2319,7 @@ input:-moz-placeholder
    .container
       position: relative
    .sale__arr
-      top: 185px
+      top: 213px
 .footer 
    position: relative
    padding: 101px 0 70px
